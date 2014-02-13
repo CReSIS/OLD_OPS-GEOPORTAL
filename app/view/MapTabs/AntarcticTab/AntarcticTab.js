@@ -91,7 +91,7 @@ var antarcticMapPanel = Ext.create('GeoExt.panel.Map', {
 			{displayInLayerSwitcher:false}
 		),*/
 		
-		selectedLine = new OpenLayers.Layer.Vector(
+		antarcticSelectedLine = new OpenLayers.Layer.Vector(
 			'',
 			{displayInLayerSwitcher:false}
 		)
@@ -229,7 +229,7 @@ antarcticMapPanel.map.events.register(
 
 function antarcticRenderClosestFrame(response) {
 	
-	selectedLine.removeAllFeatures(); // CLEAR ANY EXISTING RENDERED SELECTIONS
+	antarcticSelectedLine.removeAllFeatures(); // CLEAR ANY EXISTING RENDERED SELECTIONS
 	
 	responseData = JSON.parse(response); // READ THE OUTER JSON
 	
@@ -258,7 +258,7 @@ function antarcticRenderClosestFrame(response) {
 		cAntarcticImageBrowserPanel.add(antarcticEchogramImage);
 	},200);
 	
-	// ADD THE FRAME POINTS TO THE selectedLine VECTOR
+	// ADD THE FRAME POINTS TO THE antarcticSelectedLine VECTOR
 	setTimeout(function(){
 		var points = new Array();
 		for (idx=0;idx<=frameData.X.length;idx++){
@@ -269,8 +269,8 @@ function antarcticRenderClosestFrame(response) {
 		var line = new OpenLayers.Geometry.LineString(points);
 		var style = {strokeColor: '#FF0000',strokeWidth: 5};
 		var linefeature = new OpenLayers.Feature.Vector(line,null,style);
-		selectedLine.addFeatures([linefeature]);
-		selectedLine.redraw(true);
+		antarcticSelectedLine.addFeatures([linefeature]);
+		antarcticSelectedLine.redraw(true);
 		
 		// CENTER TO THE FEATURE AND ZOOM TO LEVEL 6
 		//antarcticMapPanel.map.setCenter([points[Math.round(points.length/2)].x,points[Math.round(points.length/2)].y],6);

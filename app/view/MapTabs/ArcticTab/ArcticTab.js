@@ -99,7 +99,7 @@ var arcticMapPanel = Ext.create('GeoExt.panel.Map', {
 			{displayInLayerSwitcher:false}
 		),*/
 		
-		selectedLine = new OpenLayers.Layer.Vector(
+		arcticSelectedLine = new OpenLayers.Layer.Vector(
 			'',
 			{displayInLayerSwitcher:false}
 		)
@@ -238,7 +238,7 @@ arcticMapPanel.map.events.register(
 
 function arcticRenderClosestFrame(response) {
 	
-	selectedLine.removeAllFeatures(); // CLEAR ANY EXISTING RENDERED SELECTIONS
+	arcticSelectedLine.removeAllFeatures(); // CLEAR ANY EXISTING RENDERED SELECTIONS
 	
 	responseData = JSON.parse(response); // READ THE OUTER JSON
 	
@@ -268,7 +268,7 @@ function arcticRenderClosestFrame(response) {
 		cArcticImageBrowserPanel.add(arcticEchogramImage);
 	},200);
 		
-	// ADD THE FRAME POINTS TO THE selectedLine VECTOR
+	// ADD THE FRAME POINTS TO THE arcticSelectedLine VECTOR
 	setTimeout(function(){
 		var points = new Array();
 		for (idx=0;idx<=frameData.X.length;idx++){
@@ -279,8 +279,8 @@ function arcticRenderClosestFrame(response) {
 		var line = new OpenLayers.Geometry.LineString(points);
 		var style = {strokeColor: '#FF0000',strokeWidth: 5};
 		var linefeature = new OpenLayers.Feature.Vector(line,null,style);
-		selectedLine.addFeatures([linefeature]);
-		selectedLine.redraw(true);
+		arcticSelectedLine.addFeatures([linefeature]);
+		arcticSelectedLine.redraw(true);
 		// CENTER TO THE FEATURE AND ZOOM TO LEVEL 6
 		//arcticMapPanel.map.setCenter([points[Math.round(points.length/2)].x,points[Math.round(points.length/2)].y],6);
 		
