@@ -8,7 +8,7 @@ Ext.Loader.addClassPathMappings({
   "Ext": "ext/src",
   "Ext.Msg": "ext/src/window/MessageBox.js",
   "Ext.rtl.EventObjectImpl": "ext/src/rtl/EventObject.js",
-  "ops2": "app"
+  "ops": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -827,10 +827,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.window.Window": [
     "Ext.Window"
   ],
-  "ops2.Application": [],
-  "ops2.controller.Main": [],
-  "ops2.view.Main": [],
-  "ops2.view.Viewport": []
+  "ops.Application": [],
+  "ops.controller.Main": [],
+  "ops.view.Main": [],
+  "ops.view.Viewport": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1817,12 +1817,12 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.window.Window": [
     "widget.window"
   ],
-  "ops2.Application": [],
-  "ops2.controller.Main": [],
-  "ops2.view.Main": [
+  "ops.Application": [],
+  "ops.controller.Main": [],
+  "ops.view.Main": [
     "widget.app-main"
   ],
-  "ops2.view.Viewport": []
+  "ops.view.Viewport": []
 });
 Ext.setVersion("ext-theme-base", "4.2.1");
 Ext.setVersion("ext-theme-classic", "4.2.1");
