@@ -8,7 +8,8 @@ Ext.Loader.addClassPathMappings({
   "Ext": "ext/src",
   "Ext.Msg": "ext/src/window/MessageBox.js",
   "Ext.rtl.EventObjectImpl": "ext/src/rtl/EventObject.js",
-  "ops": "app"
+  "GeoExt": "geoext/src/GeoExt",
+  "OPS": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -827,10 +828,161 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.window.Window": [
     "Ext.Window"
   ],
-  "ops.Application": [],
-  "ops.controller.Main": [],
-  "ops.view.Main": [],
-  "ops.view.Viewport": []
+  "GeoExt.Action": [],
+  "GeoExt.FeatureRenderer": [],
+  "GeoExt.Form": [],
+  "GeoExt.Lang": [],
+  "GeoExt.LegendImage": [],
+  "GeoExt.container.LayerLegend": [
+    "GeoExt.LayerLegend"
+  ],
+  "GeoExt.container.UrlLegend": [
+    "GeoExt.UrlLegend"
+  ],
+  "GeoExt.container.VectorLegend": [
+    "GeoExt.VectorLegend"
+  ],
+  "GeoExt.container.WmsLegend": [
+    "GeoExt.WMSLegend"
+  ],
+  "GeoExt.data.AttributeModel": [
+    "GeoExt.data.AttributeRecord"
+  ],
+  "GeoExt.data.AttributeStore": [],
+  "GeoExt.data.CswRecordsModel": [],
+  "GeoExt.data.FeatureStore": [],
+  "GeoExt.data.LayerModel": [
+    "GeoExt.data.LayerRecord"
+  ],
+  "GeoExt.data.LayerStore": [],
+  "GeoExt.data.LayerTreeModel": [
+    "GeoExt.data.LayerTreeRecord"
+  ],
+  "GeoExt.data.MapfishPrintProvider": [],
+  "GeoExt.data.OwsStore": [
+    "GeoExt.data.OWSStore"
+  ],
+  "GeoExt.data.PrintPage": [],
+  "GeoExt.data.RasterStyleModel": [],
+  "GeoExt.data.ScaleModel": [],
+  "GeoExt.data.ScaleStore": [],
+  "GeoExt.data.StyleStore": [],
+  "GeoExt.data.VectorStyleModel": [],
+  "GeoExt.data.WfsCapabilitiesLayerModel": [
+    "GeoExt.data.WFSCapabilitiesModel",
+    "GeoExt.data.WfsCapabilitiesModel"
+  ],
+  "GeoExt.data.WfsCapabilitiesLayerStore": [
+    "GeoExt.data.WFSCapabilitiesStore",
+    "GeoExt.data.WfsCapabilitiesStore"
+  ],
+  "GeoExt.data.WmcLayerModel": [
+    "GeoExt.data.WMCLayerModel"
+  ],
+  "GeoExt.data.WmsCapabilitiesLayerModel": [
+    "GeoExt.data.WMSCapabilitiesModel",
+    "GeoExt.data.WmsCapabilitiesModel"
+  ],
+  "GeoExt.data.WmsCapabilitiesLayerStore": [
+    "GeoExt.data.WMSCapabilitiesStore",
+    "GeoExt.data.WmsCapabilitiesStore"
+  ],
+  "GeoExt.data.WmsDescribeLayerModel": [],
+  "GeoExt.data.WmsDescribeLayerStore": [
+    "GeoExt.data.WMSDescribeLayerStore"
+  ],
+  "GeoExt.data.proxy.Protocol": [],
+  "GeoExt.data.reader.Attribute": [
+    "GeoExt.data.AttributeReader"
+  ],
+  "GeoExt.data.reader.CswRecords": [
+    "GeoExt.data.CSWRecordsReader"
+  ],
+  "GeoExt.data.reader.Feature": [],
+  "GeoExt.data.reader.WfsCapabilities": [
+    "GeoExt.data.reader.WFSCapabilities",
+    "GeoExt.data.WFSCapabilitiesReader"
+  ],
+  "GeoExt.data.reader.Wmc": [
+    "GeoExt.data.WMCReader"
+  ],
+  "GeoExt.data.reader.WmsCapabilities": [
+    "GeoExt.data.reader.WMSCapabilities",
+    "GeoExt.data.WMSCapabilitiesReader"
+  ],
+  "GeoExt.data.reader.WmsDescribeLayer": [
+    "GeoExt.data.reader.WMSDescribeLayer",
+    "GeoExt.data.WMSCapabilitiesReader"
+  ],
+  "GeoExt.form.Basic": [],
+  "GeoExt.form.Panel": [],
+  "GeoExt.form.action.Search": [
+    "GeoExt.form.SearchAction"
+  ],
+  "GeoExt.form.field.GeocoderComboBox": [
+    "GeoExt.form.GeocoderComboBox"
+  ],
+  "GeoExt.grid.column.Symbolizer": [
+    "GeoExt.grid.SymbolizerColumn"
+  ],
+  "GeoExt.panel.Legend": [
+    "GeoExt.LegendPanel"
+  ],
+  "GeoExt.panel.Map": [
+    "GeoExt.MapPanel"
+  ],
+  "GeoExt.panel.PrintMap": [
+    "GeoExt.PrintMapPanel"
+  ],
+  "GeoExt.plugins.PrintExtent": [
+    "GeoExt.PrintExtent"
+  ],
+  "GeoExt.plugins.PrintPageField": [
+    "GeoExt.PrintPageField"
+  ],
+  "GeoExt.plugins.PrintProviderField": [
+    "GeoExt.PrintProviderField"
+  ],
+  "GeoExt.selection.FeatureModel": [],
+  "GeoExt.slider.LayerOpacity": [
+    "GeoExt.LayerOpacitySlider"
+  ],
+  "GeoExt.slider.Tip": [
+    "GeoExt.SliderTip"
+  ],
+  "GeoExt.slider.Zoom": [
+    "GeoExt.ZoomSlider"
+  ],
+  "GeoExt.state.PermalinkProvider": [],
+  "GeoExt.tree.BaseLayerContainer": [],
+  "GeoExt.tree.Column": [],
+  "GeoExt.tree.LayerContainer": [],
+  "GeoExt.tree.LayerLoader": [],
+  "GeoExt.tree.LayerNode": [],
+  "GeoExt.tree.OverlayLayerContainer": [],
+  "GeoExt.tree.Panel": [],
+  "GeoExt.tree.View": [],
+  "GeoExt.window.Popup": [
+    "GeoExt.Popup"
+  ],
+  "OPS.Application": [],
+  "OPS.Global": [],
+  "OPS.controller.MapTabs": [],
+  "OPS.controller.SelectionMenu": [],
+  "OPS.model.DownloadType": [],
+  "OPS.model.EpsgWktProj": [],
+  "OPS.model.System": [],
+  "OPS.store.DownloadTypes": [],
+  "OPS.store.EpsgWktProjs": [],
+  "OPS.store.Systems": [],
+  "OPS.view.FooterBar": [],
+  "OPS.view.HeaderBar": [],
+  "OPS.view.MapTabs.AntarcticTab.AntarcticTab": [],
+  "OPS.view.MapTabs.ArcticTab.ArcticTab": [],
+  "OPS.view.MapTabs.MapTabs": [],
+  "OPS.view.Menus.Menus": [],
+  "OPS.view.Menus.SelectionMenu.SelectionMenu": [],
+  "OPS.view.Viewport": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1817,12 +1969,196 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.window.Window": [
     "widget.window"
   ],
-  "ops.Application": [],
-  "ops.controller.Main": [],
-  "ops.view.Main": [
-    "widget.app-main"
+  "GeoExt.Action": [
+    "widget.gx_action"
   ],
-  "ops.view.Viewport": []
+  "GeoExt.FeatureRenderer": [
+    "widget.gx_renderer"
+  ],
+  "GeoExt.Form": [],
+  "GeoExt.Lang": [],
+  "GeoExt.LegendImage": [
+    "widget.gx_legendimage"
+  ],
+  "GeoExt.container.LayerLegend": [
+    "widget.gx_layerlegend"
+  ],
+  "GeoExt.container.UrlLegend": [
+    "widget.gx_urllegend"
+  ],
+  "GeoExt.container.VectorLegend": [
+    "widget.gx_vectorlegend"
+  ],
+  "GeoExt.container.WmsLegend": [
+    "widget.gx_wmslegend"
+  ],
+  "GeoExt.data.AttributeModel": [
+    "model.gx_attribute"
+  ],
+  "GeoExt.data.AttributeStore": [],
+  "GeoExt.data.CswRecordsModel": [
+    "model.gx_cswrecords"
+  ],
+  "GeoExt.data.FeatureStore": [],
+  "GeoExt.data.LayerModel": [
+    "model.gx_layer"
+  ],
+  "GeoExt.data.LayerStore": [],
+  "GeoExt.data.LayerTreeModel": [
+    "model.gx_layertree"
+  ],
+  "GeoExt.data.MapfishPrintProvider": [],
+  "GeoExt.data.OwsStore": [],
+  "GeoExt.data.PrintPage": [],
+  "GeoExt.data.RasterStyleModel": [],
+  "GeoExt.data.ScaleModel": [
+    "model.gx_scale"
+  ],
+  "GeoExt.data.ScaleStore": [],
+  "GeoExt.data.StyleStore": [
+    "store.gx_style"
+  ],
+  "GeoExt.data.VectorStyleModel": [],
+  "GeoExt.data.WfsCapabilitiesLayerModel": [
+    "model.gx_wfscapabilities"
+  ],
+  "GeoExt.data.WfsCapabilitiesLayerStore": [],
+  "GeoExt.data.WmcLayerModel": [
+    "model.gx_wmc"
+  ],
+  "GeoExt.data.WmsCapabilitiesLayerModel": [
+    "model.gx_wmscapabilities"
+  ],
+  "GeoExt.data.WmsCapabilitiesLayerStore": [],
+  "GeoExt.data.WmsDescribeLayerModel": [
+    "model.gx_wmsdescribelayer"
+  ],
+  "GeoExt.data.WmsDescribeLayerStore": [],
+  "GeoExt.data.proxy.Protocol": [
+    "proxy.gx_protocol"
+  ],
+  "GeoExt.data.reader.Attribute": [
+    "reader.gx_attribute"
+  ],
+  "GeoExt.data.reader.CswRecords": [
+    "reader.gx_cswrecords"
+  ],
+  "GeoExt.data.reader.Feature": [
+    "reader.feature"
+  ],
+  "GeoExt.data.reader.WfsCapabilities": [
+    "reader.gx_wfscapabilities"
+  ],
+  "GeoExt.data.reader.Wmc": [
+    "reader.gx_wmc"
+  ],
+  "GeoExt.data.reader.WmsCapabilities": [
+    "reader.gx_wmscapabilities"
+  ],
+  "GeoExt.data.reader.WmsDescribeLayer": [
+    "reader.gx_wmsdescribelayer"
+  ],
+  "GeoExt.form.Basic": [],
+  "GeoExt.form.Panel": [
+    "widget.gx_form"
+  ],
+  "GeoExt.form.action.Search": [
+    "formaction.search"
+  ],
+  "GeoExt.form.field.GeocoderComboBox": [
+    "widget.gx_geocodercombo"
+  ],
+  "GeoExt.grid.column.Symbolizer": [
+    "widget.gx_symbolizercolumn"
+  ],
+  "GeoExt.panel.Legend": [
+    "widget.gx_legendpanel"
+  ],
+  "GeoExt.panel.Map": [
+    "widget.gx_mappanel"
+  ],
+  "GeoExt.panel.PrintMap": [
+    "widget.gx_printmappanel"
+  ],
+  "GeoExt.plugins.PrintExtent": [
+    "widget.gx_printextent"
+  ],
+  "GeoExt.plugins.PrintPageField": [
+    "widget.gx_printpagefield"
+  ],
+  "GeoExt.plugins.PrintProviderField": [
+    "widget.gx_printproviderfield"
+  ],
+  "GeoExt.selection.FeatureModel": [
+    "selection.featuremodel"
+  ],
+  "GeoExt.slider.LayerOpacity": [
+    "widget.gx_opacityslider"
+  ],
+  "GeoExt.slider.Tip": [],
+  "GeoExt.slider.Zoom": [
+    "widget.gx_zoomslider"
+  ],
+  "GeoExt.state.PermalinkProvider": [
+    "widget.gx_permalinkprovider"
+  ],
+  "GeoExt.tree.BaseLayerContainer": [
+    "plugin.gx_baselayercontainer"
+  ],
+  "GeoExt.tree.Column": [
+    "widget.gx_treecolumn"
+  ],
+  "GeoExt.tree.LayerContainer": [
+    "plugin.gx_layercontainer"
+  ],
+  "GeoExt.tree.LayerLoader": [],
+  "GeoExt.tree.LayerNode": [
+    "plugin.gx_layer"
+  ],
+  "GeoExt.tree.OverlayLayerContainer": [
+    "plugin.gx_overlaylayercontainer"
+  ],
+  "GeoExt.tree.Panel": [
+    "widget.gx_treepanel"
+  ],
+  "GeoExt.tree.View": [
+    "widget.gx_treeview"
+  ],
+  "GeoExt.window.Popup": [
+    "widget.gx_popup"
+  ],
+  "OPS.Application": [],
+  "OPS.Global": [],
+  "OPS.controller.MapTabs": [],
+  "OPS.controller.SelectionMenu": [],
+  "OPS.model.DownloadType": [],
+  "OPS.model.EpsgWktProj": [],
+  "OPS.model.System": [],
+  "OPS.store.DownloadTypes": [],
+  "OPS.store.EpsgWktProjs": [],
+  "OPS.store.Systems": [],
+  "OPS.view.FooterBar": [
+    "widget.footerbar"
+  ],
+  "OPS.view.HeaderBar": [
+    "widget.headerbar"
+  ],
+  "OPS.view.MapTabs.AntarcticTab.AntarcticTab": [
+    "widget.antarctictab"
+  ],
+  "OPS.view.MapTabs.ArcticTab.ArcticTab": [
+    "widget.arctictab"
+  ],
+  "OPS.view.MapTabs.MapTabs": [
+    "widget.maptabs"
+  ],
+  "OPS.view.Menus.Menus": [
+    "widget.menus"
+  ],
+  "OPS.view.Menus.SelectionMenu.SelectionMenu": [
+    "widget.selectionmenu"
+  ],
+  "OPS.view.Viewport": []
 });
 Ext.setVersion("ext-theme-base", "4.2.1");
 Ext.setVersion("ext-theme-classic", "4.2.1");

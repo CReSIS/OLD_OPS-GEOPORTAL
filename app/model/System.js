@@ -3,6 +3,6 @@ Ext.define('OPS.model.System', {
 	fields: [
 		{name: 'season', type: 'string'},
 		{name: 'system', type: 'string'},
-		{name: 'location',  type: 'string'},
+		{name: 'location',  type: 'string'}
 	]
 });

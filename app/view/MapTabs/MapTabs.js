@@ -15,27 +15,24 @@ Ext.define('OPS.view.MapTabs.MapTabs' ,{
 			{
 				xtype: 'arctictab',
 				collapsible: false,
-				header: false,
-			},
-			{
+				header: false
+			},{
 				xtype: 'antarctictab',
 				collapsible: false,
-				header: false,
-			},
-			{
+				header: false
+			},{
 				title: 'CReSIS Data Site',
 				xtype: 'box',
 				autoEl: {
 					tag: 'iframe',
-					src: 'https://data.cresis.ku.edu/',
+					src: 'https://data.cresis.ku.edu/'
 				}
-			},
-			{
+			},{
 				title: 'About OpenPolarServer',
 				xtype: 'box',
 				autoEl: {
 					tag: 'iframe',
-					src: '/app/help/about.html',
+					src: '/app/help/about.html'
 				}
 			}
 		]

@@ -1,17 +1,35 @@
-Ext.define('ops2.Application', {
-    name: 'ops2',
+Ext.define('OPS.Application', {
+    name: 'OPS',
 
     extend: 'Ext.app.Application',
 
+	requires: [
+		'OPS.Global',
+		'GeoExt.tree.LayerContainer',
+		'GeoExt.tree.OverlayLayerContainer',
+		'GeoExt.tree.BaseLayerContainer',
+		'GeoExt.data.LayerTreeModel'
+	],
+	
     views: [
-        // TODO: add views here
+		'HeaderBar',
+		'FooterBar',
+		'MapTabs.MapTabs',
+		'MapTabs.AntarcticTab.AntarcticTab',
+		'MapTabs.ArcticTab.ArcticTab',
+		'Menus.Menus',
+		'Menus.SelectionMenu.SelectionMenu'
     ],
 
     controllers: [
-        // TODO: add controllers here
+        'MapTabs','SelectionMenu'
     ],
 
     stores: [
-        // TODO: add stores here
+        'DownloadTypes','EpsgWktProjs','Systems'
+    ],
+	
+	models: [
+        'DownloadType','EpsgWktProj','System'
     ]
 });

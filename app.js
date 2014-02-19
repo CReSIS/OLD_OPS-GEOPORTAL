@@ -1,30 +1,13 @@
-// LOADER FOR EXT/GEOGEXT
-Ext.Loader.setConfig({
-	enabled: true,
-	disableCaching: false,
-	paths: {
-		GeoExt: "geoext/src/GeoExt",
-		Ext: "ext/src"
-	}
-});
+/*
+    This file is generated and updated by Sencha Cmd. You can edit this file as
+    needed for your application, but these edits will have to be merged by
+    Sencha Cmd when upgrading.
+*/
 
-// REQUIRE NEEDED CLASSES (MAINLY FOR MAP+TREE)
-Ext.require([
-	'GeoExt.tree.LayerContainer',
-    'GeoExt.tree.OverlayLayerContainer',
-    'GeoExt.tree.BaseLayerContainer',
-    'GeoExt.data.LayerTreeModel',
-]);
-
-// DEFINE AN EXT APPLICATION
 Ext.application({
     name: 'OPS',
-    autoCreateViewport: true,
-	
-	// DEFINE STORES/MODELS FOR THE APPLICATION
-    models: ['EpsgWktProj','DownloadType','System'/*,'Layer'*/],  
-    stores: ['EpsgWktProjs','DownloadTypes','Systems'/*,'Layers'*/],
-	
-	// DEFINE CONTROLLERS FOR THE APPLICATION
-    controllers: ['SelectionMenu','MapTabs']
+
+    extend: 'OPS.Application',
+    
+    autoCreateViewport: true
 });

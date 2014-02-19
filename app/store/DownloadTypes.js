@@ -4,7 +4,7 @@ Ext.define('OPS.store.DownloadTypes', {
     data : [
         {"name":"CSV", "value":"csv"},
 		{"name":"KML", "value":"kml"},
-		//{"name":"MAT", "value":"mat"},
-		//{"name":"NETCDF", "value":"netcdf"}
+		{"name":"MAT", "value":"mat"},
+		{"name":"NETCDF", "value":"netcdf"}
     ]
 });

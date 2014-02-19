@@ -35,6 +35,9 @@
     },
     "{controllerFileName}.js.tpl.merge": {
       "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188": "eJxzrSjRS0lNy8xL1VCvTs7PKynKz8lJLfJLzE0tLkhMTq3VQxOtVddRqOZSAILUipLUvBQrBXVXoBmJBQV6znCF6ly1mtZcACwSIF0\u003d"
+    },
+    "{viewFileName}.js.tpl.merge": {
+      "acde5ea901286ca2f976bcddea23e159dbaa0e6f": "eJxzrSjRS0lNy8xL1VCqTiwo8EvMTa3VK8tMLderBpFgvpKOQjWXAhCkVpSk5qVYKai7ArU55+cW5Oel5pWo64AlM0pyc4BSHqk5Ofk6CuH5RTkpiorqXLWa1gDU/CBX"
     }
   },
   "targets": {
@@ -42,7 +45,7 @@
       "source": "build.properties.merge",
       "version": "d4613dc19be3ddb60e7ff5716e28c8b15d954f3a",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -51,15 +54,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -68,7 +71,7 @@
       "source": "native.properties.merge",
       "version": "2c8c063f9588eecff09624782d7369a8a000d61c",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -77,15 +80,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -94,7 +97,7 @@
       "source": "package.properties.merge",
       "version": "c6c1fb2fb1dda28480ad0f6e5caffc9b97d196ae",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -103,15 +106,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -120,7 +123,7 @@
       "source": "production.properties.merge",
       "version": "cbdf9712e9b5d37cecb4d0530ba1fccd0ed004a3",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -129,15 +132,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -146,7 +149,7 @@
       "source": "sencha.cfg.tpl.merge",
       "version": "8b88dc946a59c6ad6edb77744966e548250b33a3",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -155,15 +158,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -172,7 +175,7 @@
       "source": "testing.properties.merge",
       "version": "360e715956c81757e53736789fe20be045acb544",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -181,15 +184,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -198,7 +201,7 @@
       "source": "app.js.tpl.merge",
       "version": "adb7999f937a224ece5dc57252db7048652e6616",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -207,15 +210,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -224,7 +227,7 @@
       "source": "app.json.tpl.merge",
       "version": "5c35fa135e5c429faf9348c096b567a3079ad83b",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -233,15 +236,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -250,7 +253,7 @@
       "source": "index.html.tpl.merge",
       "version": "f036c68a34ae0bc941832df08c406a00545dd9f6",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -259,15 +262,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -276,7 +279,7 @@
       "source": "config.rb.tpl.merge",
       "version": "33f446bd02c3fd24eb27891582eff6a2e789796b",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -285,15 +288,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -302,7 +305,7 @@
       "source": "theme.html.tpl.merge",
       "version": "79e5bc8b4cebd921ec602e9a67c0493c70d2d5ce",
       "parameters": {
-        "viewNamespace": "ops2.view",
+        "viewNamespace": "OPS.view",
         "frameworkName": "ext",
         "frameworkPath": "ext",
         "senchadir": ".sencha",
@@ -311,15 +314,15 @@
         "viewFileName": "Main",
         "appControllers": "",
         "appViews": "",
-        "uniqueId": "fbf15291-7270-4609-b25a-638513ffe2de",
-        "appName": "ops2",
-        "modelNamespace": "ops2.model",
+        "uniqueId": "8ae9c0bc-372d-40c2-892a-947db056b415",
+        "appName": "OPS",
+        "modelNamespace": "OPS.model",
         "controllerName": "Main",
         "viewName": "Main",
         "themeName": "default",
         "packagesRelPath": "ext/packages",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all",
         "appStores": ""
       }
@@ -328,12 +331,42 @@
       "source": "{controllerFileName}.js.tpl.merge",
       "version": "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188",
       "parameters": {
-        "appName": "ops2",
+        "appName": "OPS",
         "controllerName": "Main",
         "controllerFileName": "Main",
-        "name": "ops2",
-        "controllerNamespace": "ops2.controller",
+        "name": "OPS",
+        "controllerNamespace": "OPS.controller",
         "library": "all"
+      }
+    },
+    "app/view/MapTabs.js": {
+      "source": "{viewFileName}.js.tpl.merge",
+      "version": "acde5ea901286ca2f976bcddea23e159dbaa0e6f",
+      "parameters": {
+        "appName": "OPS",
+        "viewName": "MapTabs",
+        "name": "MapTabs",
+        "viewFileName": "MapTabs"
+      }
+    },
+    "app/view/FooterBar.js": {
+      "source": "{viewFileName}.js.tpl.merge",
+      "version": "acde5ea901286ca2f976bcddea23e159dbaa0e6f",
+      "parameters": {
+        "appName": "OPS",
+        "viewName": "FooterBar",
+        "name": "FooterBar",
+        "viewFileName": "FooterBar"
+      }
+    },
+    "app/view/HeaderBar.js": {
+      "source": "{viewFileName}.js.tpl.merge",
+      "version": "acde5ea901286ca2f976bcddea23e159dbaa0e6f",
+      "parameters": {
+        "appName": "OPS",
+        "viewName": "HeaderBar",
+        "name": "HeaderBar",
+        "viewFileName": "HeaderBar"
       }
     }
   }
