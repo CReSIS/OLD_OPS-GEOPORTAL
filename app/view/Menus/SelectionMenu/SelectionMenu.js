@@ -11,7 +11,7 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 			dock: 'top',
 			handler: function() {
 				Ext.Ajax.request({
-					url: '/app/help/help.html',
+					url: '/resources/help.html',
 					success: function(response){
 						Ext.create('Ext.window.Window',{
 							title: 'Map Help Documentation',

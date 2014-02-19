@@ -39,7 +39,7 @@ mapHelp = Ext.create('Ext.button.Button', {
 	text: 'map help',
 	handler: function() {
 		Ext.Ajax.request({
-			url: '/app/help/maphelp.html',
+			url: '/resources/maphelp.html',
 			success: function(response){
 				Ext.create('Ext.window.Window',{
 					title: 'Map Help Documentation',

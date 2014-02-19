@@ -32,7 +32,7 @@ Ext.define('OPS.view.MapTabs.MapTabs' ,{
 				xtype: 'box',
 				autoEl: {
 					tag: 'iframe',
-					src: '/app/help/about.html'
+					src: '/resources/about.html'
 				}
 			}
 		]
