@@ -317,7 +317,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 									var wkt = new OpenLayers.Format.WKT();
 									var outWkt = wkt.write(polygonBoundary.features[0]);
 					
-									var inputJSON = JSON.stringify({'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg});
+									var inputJSON = JSON.stringify({'bound':outWkt,'location':curTab.toLowerCase(),'properties':{'startseg':startDateSeg,'stopseg':stopDateSeg}});
 
 									if (outFormat === 'csv') {
 										Ext.Ajax.request({
