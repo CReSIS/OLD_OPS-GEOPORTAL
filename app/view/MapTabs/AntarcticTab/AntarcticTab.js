@@ -90,11 +90,14 @@ action = Ext.create('GeoExt.Action', {
 });
 toolbarItems.push(Ext.create('Ext.button.Button', action));
 toolbarItems.push("-");
+toolbarItems.push(Ext.create('Ext.button.Button', {text:'Clear Line Selection',handler: function() {antarcticSelectedLine.removeAllFeatures();},tooltip: "clear the red line selection after browsing echograms."}));
+toolbarItems.push("-");
 antarcticMapPanel.addDocked([{
 	xtype: 'toolbar',
 	dock: 'top',
 	items: toolbarItems
 }]);
+var selectMask = new Ext.LoadMask(Ext.getBody(),{msg:"Loading Echogram Browser"});
 antarcticMapPanel.map.events.register(
 	"click",
 	antarcticMapPanel.map, 
@@ -108,14 +111,19 @@ antarcticMapPanel.map.events.register(
 		var stopDate = Ext.ComponentQuery.query('#stopDate')[0].getRawValue();
 		
 		if (!selectedSystem){alert('ERROR: SELECT SYSTEM IN THE MENU BEFORE CLICKING ON THE MAP.');return}
-		if (!selectedSeasons || selectedSeasons.length==0) { selectedSeasons = "";}
+		if (!selectedSeasons || selectedSeasons.length==0) {useSeasons = false;}else {useSeasons = true;}
 		if (!startDate){startDateSeg = '00000000_00';}else{startDateSeg = startDate.concat('_00');}
 		if (!stopDate){stopDateSeg = '99999999_99';}else{stopDateSeg = stopDate.concat('_99');}
 		
-		inputJSON = JSON.stringify({ "type": "Feature", "properties": { "location": "antarctic", "x": clickCoords.lon , "y": clickCoords.lat , "season": selectedSeasons, "startseg": startDateSeg, "stopseg": stopDateSeg}});
+		if (useSeasons) {
+			inputJSON = JSON.stringify({"properties": { "location": "antarctic", "x": clickCoords.lon , "y": clickCoords.lat , "season": selectedSeasons, "startseg": startDateSeg, "stopseg": stopDateSeg}});
+		}else {
+			inputJSON = JSON.stringify({"properties": { "location": "antarctic", "x": clickCoords.lon , "y": clickCoords.lat, "startseg": startDateSeg, "stopseg": stopDateSeg}});
+		}
+		selectMask.show()
 		Ext.Ajax.request({
 			type: "POST",
-			url: '/ops/get/closest/frame',
+			url: '/ops/get/frame/closest',
 			params: {app:selectedSystem,data:inputJSON},
 			success: function(response){antarcticRenderClosestFrame(response.responseText)},
 			error: function(){alert('ERROR FINDING CLOSEST FRAME ON CLICK EVENT.');}
@@ -125,29 +133,29 @@ antarcticMapPanel.map.events.register(
 
 function antarcticRenderClosestFrame(response) {
 	
-	antarcticSelectedLine.removeAllFeatures();
+	// decode the response and error check
 	responseData = JSON.parse(response);
 	if (responseData.status == 0){alert(responseData.data); return};
-	frameData = JSON.parse(responseData.data);
-	if (frameData.echogram_url == 'NO ECHOGRAM ONLINE'){frameData.echogram_url='/media/noEchogram.png';};
-	var treePanel = Ext.ComponentQuery.query('#arcticTree')[0];
-	treePanel.collapse();
-	var menusPanel = Ext.ComponentQuery.query('menus')[0];
-	setTimeout(function(){menusPanel.collapse();},100);
-	var cAntarcticImageBrowserPanel = Ext.ComponentQuery.query('#antarcticImageBrowserPanel')[0];
-	cAntarcticImageBrowserPanel.removeAll();
-	setTimeout(function(){
-		cAntarcticImageBrowserPanel.expand();
-		var antarcticEchogramImage = Ext.create('Ext.Img', {
-			src: frameData.echogram_url
-		});
-		cAntarcticImageBrowserPanel.add(antarcticEchogramImage);
-	},200);
-	setTimeout(function(){
+
+	// collapse layer tree
+	function collapseTree() {
+		var treePanel = Ext.ComponentQuery.query('#antarcticTree')[0];
+		treePanel.collapse();
+	}
+	
+	// collapse menu
+	function collapseMenu() {
+		var menusPanel = Ext.ComponentQuery.query('menus')[0];
+		menusPanel.collapse();
+	}
+	
+	// render selected line
+	function renderLine() {
+		antarcticSelectedLine.removeAllFeatures();
 		var points = new Array();
-		for (idx=0;idx<=frameData.X.length;idx++){
-			if (!isNaN(frameData.X[idx])){
-				points.push(new OpenLayers.Geometry.Point(frameData.X[idx],frameData.Y[idx]))
+		for (idx=0;idx<=responseData.data.X.length;idx++){
+			if (!isNaN(responseData.data.X[idx])){
+				points.push(new OpenLayers.Geometry.Point(responseData.data.X[idx],responseData.data.Y[idx]))
 			}
 		};
 		var line = new OpenLayers.Geometry.LineString(points);
@@ -155,7 +163,26 @@ function antarcticRenderClosestFrame(response) {
 		var linefeature = new OpenLayers.Feature.Vector(line,null,style);
 		antarcticSelectedLine.addFeatures([linefeature]);
 		antarcticSelectedLine.redraw(true);
-	},400);
+	}
+	
+	// render echogram image
+	function renderImage() {
+		var cAntarcticImageBrowserPanel = Ext.ComponentQuery.query('#antarcticImageBrowserPanel')[0];
+		cAntarcticImageBrowserPanel.removeAll();
+		cAntarcticImageBrowserPanel.expand();
+		var antarcticEchogramImage = Ext.create('Ext.Img', {
+			id: 'antarcticEchogramImage',
+			src: responseData.data.echograms[0]
+		});
+		cAntarcticImageBrowserPanel.add(antarcticEchogramImage);
+	}
+	
+	// execute the selection
+	setTimeout(collapseTree,0);
+	setTimeout(collapseMenu,100);
+	setTimeout(renderLine,500);
+	setTimeout(renderImage,900);
+	setTimeout(selectMask.hide(),1000);
 };
 
 var antarcticStore = Ext.create('Ext.data.TreeStore', {
@@ -184,6 +211,7 @@ var antarcticStore = Ext.create('Ext.data.TreeStore', {
 });
 
 var antarcticTree = Ext.create('GeoExt.tree.Panel', {
+	itemId: 'antarcticTree',
 	region: 'east',
 	title: 'Map Layer Selection',
 	width: 200,

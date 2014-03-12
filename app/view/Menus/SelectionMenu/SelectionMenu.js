@@ -55,7 +55,7 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 					itemId: 'stopDate',
 					format: 'Ymd',
 					value: new Date(),
-					minValue: '18000101'
+					minValue: '19930101'
 			},{
 				xtype: 'combo',
 				fieldLabel: 'Select Season/s',
@@ -89,14 +89,14 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 				itemId: 'drawPolygon',
 				text: 'Draw A Polygon',
 				scale: 'small',
-				width: 127.5,
+				width: 126,
 				tooltip: 'Draw a polygon on the map to select an area for download, see map help for more.'
 			},{
 				xtype: 'button',
 				itemId: 'clearDrawing',
 				text: 'Clear Drawing',
 				scale: 'small',
-				width: 127.5,
+				width: 126,
 				tooltip: 'Clear any drawing made on the map. This is also applied by clicking "Draw A Polygon" again.'
 			},{
 				xtype: 'label',
@@ -145,6 +145,9 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 				scale: 'large',
 				width: 255,
 				tooltip: 'Using all of the above filters and the selected region download data in the specified format.'
+			},{
+				xtype: 'label',
+				html: '<p style="text-align:center;">See Downloads Tab for Results</p>'
 			}
 		]
 

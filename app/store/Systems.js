@@ -3,8 +3,7 @@ Ext.define('OPS.store.Systems', {
 	model: 'OPS.model.System',
 	proxy: {
 		type: 'ajax',
-		url: '/ops/get/system/info/ext',
-		//url: 'data/getsysteminfo.json',
+		url: '/ops/get/system/info',
 		reader: {
 			type: 'json',
 			root: 'data'

@@ -12,16 +12,26 @@ Ext.define('OPS.view.Menus.Menus' ,{
 	},
 	
 	requires: [
-		'OPS.view.Menus.SelectionMenu.SelectionMenu'
+		'OPS.view.Menus.SelectionMenu.SelectionMenu',
+		'OPS.view.Menus.LoginMenu.LoginMenu'
 	],
 	
 	initComponent: function() {
-		this.items = [{
+		this.items = [
+		{
 			xtype: 'selectionmenu',
 			region: 'south',
 			collapsible: true,
 			bodyStyle: 'padding:15px',
-			overflowY: 'auto'
+			overflowY: 'auto',
+			title: 'Data Selection'
+		},{
+			xtype: 'loginmenu',
+			region: 'north',
+			collapsible: true,
+			bodyStyle: 'padding:15px',
+			overflowY: 'auto',
+			title: 'User Login'
 		}]
 		this.callParent(arguments);
     }

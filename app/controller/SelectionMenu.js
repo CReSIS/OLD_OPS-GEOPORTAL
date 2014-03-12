@@ -110,6 +110,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					systemStore.clearFilter()
 					systemStore.filter('system',curSystem);
 					systemStore.filter('location',curLocation);
+					systemStore.filter('public',true);
 					var distinctSeasons = systemStore.collect('season');
 					var outSeasons = [];
 					for (var i=0;i<distinctSeasons.length;i++){
@@ -121,6 +122,8 @@ Ext.define('OPS.controller.SelectionMenu', {
 						fields: ['season'],
 						data: outSeasons
 					});
+					
+					distinctSeasonsStore.sort('season','ASC');
 					
 					seasonCombo.bindStore(distinctSeasonsStore);
 				}
@@ -274,7 +277,8 @@ Ext.define('OPS.controller.SelectionMenu', {
 					}else if (curTab === 'Antarctic') {
 						var inEPSG = "EPSG:3031";
 					}else{
-						alert('SYSTEM ERROR: Only Arctic/Antarctic Supported');
+						alert('SYSTEM ERROR: Only Arctic/Antarctic Supported. You must be on the Arctic/Antarctic tab to submit downloads.');
+						return
 					};
 					
 					var outFormat = Ext.ComponentQuery.query('#outFormat')[0].value;
@@ -291,8 +295,10 @@ Ext.define('OPS.controller.SelectionMenu', {
 						alert('ERROR: System must be selected');
 					}else {
 					
-						if (!selectedSeasons) { 
-							selectedSeasons = "";
+						if (!selectedSeasons || selectedSeasons.length!=0) {
+							useSeasons = true
+						}else {
+							useSeasons = false
 						}
 						
 						if (!startDate){
@@ -308,7 +314,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					
 						Ext.Msg.alert({
 							title:'Confirm Download', 
-							msg:'Your file will now be generated (could take a few minutes) and automatically begin to download. Note the URL in the download window, your file will be available at this location for 7 days. While the download is prepared you can continue to use the portal. Please be cautious of your download size, for large data requests (multiple seasons) contact us at CReSIS (see the CReSIS Data Site tab).',
+							msg:'The file will now be downloaded, see the downloads tab for status and results. Please be patient. While the download is processed you can continue to use the OpenPolarServer and even submit more download requests. The files will be available at the download link for 7 days.',
 							buttons: Ext.Msg.OKCANCEL,
 							fn: function(btn){
 								if (btn == 'ok'){
@@ -317,36 +323,120 @@ Ext.define('OPS.controller.SelectionMenu', {
 									var wkt = new OpenLayers.Format.WKT();
 									var outWkt = wkt.write(polygonBoundary.features[0]);
 					
-									var inputJSON = JSON.stringify({'bound':outWkt,'location':curTab.toLowerCase(),'properties':{'startseg':startDateSeg,'stopseg':stopDateSeg}});
-
-									if (outFormat === 'csv') {
-										Ext.Ajax.request({
-											method: 'POST',
-											url: '/ops/get/layer/points/csv',
-											params: {'app':selectedSystem,'data':inputJSON},
-											success: function(response){
-												responseJSON = JSON.parse(response.responseText)
-												window.open(responseJSON.data,'Your File is Ready','width=600,height=200');
-											},
-											failure: function() {alert('ERROR: UNKOWN ERROR OCCURED.');}
-										});
+									if (useSeasons) {
+										var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg,'season':selectedSeasons}});
+									}else {
+										var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg}});
+									}
+									
+									fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
+									
+									if (outFormat === 'csv-good') {
+										downloadId = Math.floor(Math.random()*1000000);
+										fileDownloadStore.add({'id':downloadId,'location':curTab,'status':'Processing','stime':new Date().toLocaleTimeString(),'ftime':'','type':'csv-good','url':''});
+										fileDownloadStore.commitChanges();
+										function getCsvGood(selectedSystem,inputJSON,downloadId) {
+											tmp = Ext.Ajax.request({
+												method: 'POST',
+												url: '/ops/get/layer/points/csv',
+												timeout: 1200000,
+												params: {'app':selectedSystem,'data':inputJSON},
+												success: function(response){
+													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
+													responseJSON = JSON.parse(response.responseText)
+													if (responseJSON.status == 1) {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Complete';
+														outRecord.data.url = responseJSON.data;
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit()
+														Ext.Msg.alert('NOTICE','Download is ready, see the Downloads tab.');
+													}else {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Error';
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit();
+														Ext.Msg.alert('ERROR',responseJSON.data);
+													}
+												},
+												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+											});
+										}
+										getCsvGood(selectedSystem,inputJSON,downloadId);
+									}else if (outFormat === 'csv') {
+										tmpJSON = JSON.parse(inputJSON);
+										tmpJSON.properties.allPoints = true;
+										inputJSON = JSON.stringify(tmpJSON);
+										downloadId = Math.floor(Math.random()*1000000);
+										fileDownloadStore.add({'id':downloadId,'location':curTab,'status':'Processing','stime':new Date().toLocaleTimeString(),'ftime':'','type':'csv','url':''});
+										fileDownloadStore.commitChanges();
+										function getCsv(selectedSystem,inputJSON,downloadId) {
+											tmp = Ext.Ajax.request({
+												method: 'POST',
+												url: '/ops/get/layer/points/csv',
+												timeout: 1200000,
+												params: {'app':selectedSystem,'data':inputJSON},
+												success: function(response){
+													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
+													responseJSON = JSON.parse(response.responseText)
+													if (responseJSON.status == 1) {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Complete';
+														outRecord.data.url = responseJSON.data;
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit()
+														Ext.Msg.alert('NOTICE','Download is ready, see the Downloads tab.');
+													}else {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Error';
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit();
+														Ext.Msg.alert('ERROR',responseJSON.data);
+													}
+												},
+												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+											});
+										}
+										getCsv(selectedSystem,inputJSON,downloadId);
 									}else if (outFormat === 'kml'){
-										Ext.Ajax.request({
-											method: 'POST',
-											url: '/ops/get/layer/points/kml',
-											params: {'app':selectedSystem,'data':inputJSON},
-											success: function(response){
-												responseJSON = JSON.parse(response.responseText)
-												window.open(responseJSON.data,'Your File is Ready','width=600,height=200');
-											},
-											failure: function() {alert('ERROR: UNKOWN ERROR OCCURED.');}
-										});
+										downloadId = Math.floor(Math.random()*1000000);
+										fileDownloadStore.add({'id':downloadId,'location':curTab,'status':'Processing','stime':new Date().toLocaleTimeString(),'ftime':'','type':'kml','url':''});
+										fileDownloadStore.commitChanges();
+										function getKml(selectedSystem,inputJSON,downloadId) {
+											tmp = Ext.Ajax.request({
+												method: 'POST',
+												url: '/ops/get/layer/points/kml',
+												timeout: 1200000,
+												params: {'app':selectedSystem,'data':inputJSON},
+												success: function(response){
+													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
+													responseJSON = JSON.parse(response.responseText)
+													if (responseJSON.status == 1) {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Complete';
+														outRecord.data.url = responseJSON.data;
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit();
+														Ext.Msg.alert('NOTICE','Download is ready, see the Downloads tab.');
+													}else {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Error';
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit();
+														Ext.Msg.alert('ERROR',responseJSON.data);
+													}
+														
+												},
+												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+											});
+										}
+										getKml(selectedSystem,inputJSON,downloadId);
 									}else if (outFormat === 'mat'){
-										alert('ERROR: MAT FORMAT OUTPUT IN DEVELOPMENT');
+										alert('NOTICE: MAT FORMAT OUTPUT IN DEVELOPMENT');
 									}else if (outFormat === 'netcdf'){
-										alert('ERROR: NETCDF FORMAT OUTPUT IN DEVELOPMENT');
+										alert('NOTICE: NETCDF FORMAT OUTPUT IN DEVELOPMENT');
 									}else{
-										alert('ERROR: OUTPUT FORMAT NOT CURRENTLY SUPPORTED');
+										alert('NOTICE: OUTPUT FORMAT NOT CURRENTLY SUPPORTED');
 									}
 									
 									polygonBoundary.features[0].geometry.transform(new OpenLayers.Projection("EPSG:4326"),new OpenLayers.Projection(inEPSG));

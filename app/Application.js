@@ -17,19 +17,20 @@ Ext.define('OPS.Application', {
 		'MapTabs.MapTabs',
 		'MapTabs.AntarcticTab.AntarcticTab',
 		'MapTabs.ArcticTab.ArcticTab',
+		'MapTabs.DownloadTab.DownloadTab',
 		'Menus.Menus',
 		'Menus.SelectionMenu.SelectionMenu'
     ],
 
     controllers: [
-        'MapTabs','SelectionMenu'
+        'MapTabs','SelectionMenu','LoginMenu'
     ],
 
     stores: [
-        'DownloadTypes','EpsgWktProjs','Systems'
+        'DownloadTypes','EpsgWktProjs','Systems','FileDownloads'
     ],
 	
 	models: [
-        'DownloadType','EpsgWktProj','System'
+        'DownloadType','EpsgWktProj','System','FileDownload'
     ]
 });

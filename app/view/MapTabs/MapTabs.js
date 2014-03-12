@@ -6,7 +6,8 @@ Ext.define('OPS.view.MapTabs.MapTabs' ,{
 	
 	requires: [
 		'OPS.view.MapTabs.ArcticTab.ArcticTab',
-		'OPS.view.MapTabs.AntarcticTab.AntarcticTab'
+		'OPS.view.MapTabs.AntarcticTab.AntarcticTab',
+		'OPS.view.MapTabs.DownloadTab.DownloadTab'
 	],
 	
 	initComponent: function() {
@@ -20,6 +21,10 @@ Ext.define('OPS.view.MapTabs.MapTabs' ,{
 				xtype: 'antarctictab',
 				collapsible: false,
 				header: false
+			},{
+				title: 'Downloads',
+				xtype: 'downloadtab',
+				collapsible: false
 			},{
 				title: 'CReSIS Data Site',
 				xtype: 'box',
