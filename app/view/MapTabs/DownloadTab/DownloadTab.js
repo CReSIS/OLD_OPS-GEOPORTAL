@@ -4,7 +4,7 @@ Ext.define('OPS.view.MapTabs.DownloadTab.DownloadTab', {
 	
 	initComponent: function() {
 	
-		this.store = Ext.data.StoreManager.lookup('FileDownloads'),
+		this.store = Ext.getStore('FileDownloads'),
 		this.columns = [
 			{text:'Download Id',dataIndex:'id',width:15,align:'center',sortable:false,hideable:false},
 			{text:'Location',dataIndex:'location',width:15,align:'center',sortable:false,hideable:false},

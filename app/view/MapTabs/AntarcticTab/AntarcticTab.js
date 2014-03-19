@@ -97,7 +97,7 @@ antarcticMapPanel.addDocked([{
 	dock: 'top',
 	items: toolbarItems
 }]);
-var selectMask = new Ext.LoadMask(Ext.getBody(),{msg:"Loading Echogram Browser"});
+
 antarcticMapPanel.map.events.register(
 	"click",
 	antarcticMapPanel.map, 
@@ -120,7 +120,7 @@ antarcticMapPanel.map.events.register(
 		}else {
 			inputJSON = JSON.stringify({"properties": { "location": "antarctic", "x": clickCoords.lon , "y": clickCoords.lat, "startseg": startDateSeg, "stopseg": stopDateSeg}});
 		}
-		selectMask.show()
+		Ext.getBody().mask("Loading Echogram Browser");
 		Ext.Ajax.request({
 			type: "POST",
 			url: '/ops/get/frame/closest',
@@ -182,7 +182,7 @@ function antarcticRenderClosestFrame(response) {
 	setTimeout(collapseMenu,100);
 	setTimeout(renderLine,500);
 	setTimeout(renderImage,900);
-	setTimeout(selectMask.hide(),1000);
+	setTimeout(Ext.getBody().unmask(),1000);
 };
 
 var antarcticStore = Ext.create('Ext.data.TreeStore', {

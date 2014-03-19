@@ -1,4 +1,4 @@
-$image-search-path: 'C:/Users/kpurdon.HOME/Documents/Projects/github/OPS-GEOPORTAL/build/production/OPS/resources';
+$image-search-path: 'C:/Users/kpurdon.HOME/Documents/Projects/github/OPS-GEOPORTAL/build/testing/OPS/resources';
 $theme-name:  'ext-theme-classic' !default;
 $include-ext-abstractcomponent: true;
 $include-ext-abstractmanager: true;
@@ -246,6 +246,7 @@ $include-ext-grid-columnmanager: true;
 $include-ext-grid-panel: true;
 $include-ext-grid-roweditor: true;
 $include-ext-grid-roweditorbuttons: true;
+$include-ext-grid-scroller: true;
 $include-ext-grid-view: true;
 $include-ext-grid-viewdropzone: true;
 $include-ext-grid-column-action: true;

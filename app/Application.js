@@ -8,7 +8,8 @@ Ext.define('OPS.Application', {
 		'GeoExt.tree.LayerContainer',
 		'GeoExt.tree.OverlayLayerContainer',
 		'GeoExt.tree.BaseLayerContainer',
-		'GeoExt.data.LayerTreeModel'
+		'GeoExt.data.LayerTreeModel',
+		'Ext.grid.Panel'
 	],
 	
     views: [
@@ -19,7 +20,8 @@ Ext.define('OPS.Application', {
 		'MapTabs.ArcticTab.ArcticTab',
 		'MapTabs.DownloadTab.DownloadTab',
 		'Menus.Menus',
-		'Menus.SelectionMenu.SelectionMenu'
+		'Menus.SelectionMenu.SelectionMenu',
+		'Menus.LoginMenu.LoginMenu'
     ],
 
     controllers: [

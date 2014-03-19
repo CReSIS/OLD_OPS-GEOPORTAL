@@ -967,19 +967,24 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "OPS.Application": [],
   "OPS.Global": [],
+  "OPS.controller.LoginMenu": [],
   "OPS.controller.MapTabs": [],
   "OPS.controller.SelectionMenu": [],
   "OPS.model.DownloadType": [],
   "OPS.model.EpsgWktProj": [],
+  "OPS.model.FileDownload": [],
   "OPS.model.System": [],
   "OPS.store.DownloadTypes": [],
   "OPS.store.EpsgWktProjs": [],
+  "OPS.store.FileDownloads": [],
   "OPS.store.Systems": [],
   "OPS.view.FooterBar": [],
   "OPS.view.HeaderBar": [],
   "OPS.view.MapTabs.AntarcticTab.AntarcticTab": [],
   "OPS.view.MapTabs.ArcticTab.ArcticTab": [],
+  "OPS.view.MapTabs.DownloadTab.DownloadTab": [],
   "OPS.view.MapTabs.MapTabs": [],
+  "OPS.view.Menus.LoginMenu.LoginMenu": [],
   "OPS.view.Menus.Menus": [],
   "OPS.view.Menus.SelectionMenu.SelectionMenu": [],
   "OPS.view.Viewport": []
@@ -2129,13 +2134,16 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "OPS.Application": [],
   "OPS.Global": [],
+  "OPS.controller.LoginMenu": [],
   "OPS.controller.MapTabs": [],
   "OPS.controller.SelectionMenu": [],
   "OPS.model.DownloadType": [],
   "OPS.model.EpsgWktProj": [],
+  "OPS.model.FileDownload": [],
   "OPS.model.System": [],
   "OPS.store.DownloadTypes": [],
   "OPS.store.EpsgWktProjs": [],
+  "OPS.store.FileDownloads": [],
   "OPS.store.Systems": [],
   "OPS.view.FooterBar": [
     "widget.footerbar"
@@ -2149,8 +2157,14 @@ Ext.ClassManager.addNameAliasMappings({
   "OPS.view.MapTabs.ArcticTab.ArcticTab": [
     "widget.arctictab"
   ],
+  "OPS.view.MapTabs.DownloadTab.DownloadTab": [
+    "widget.downloadtab"
+  ],
   "OPS.view.MapTabs.MapTabs": [
     "widget.maptabs"
+  ],
+  "OPS.view.Menus.LoginMenu.LoginMenu": [
+    "widget.loginmenu"
   ],
   "OPS.view.Menus.Menus": [
     "widget.menus"
