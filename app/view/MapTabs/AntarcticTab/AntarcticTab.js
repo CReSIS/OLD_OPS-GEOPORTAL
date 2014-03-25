@@ -90,7 +90,7 @@ action = Ext.create('GeoExt.Action', {
 });
 toolbarItems.push(Ext.create('Ext.button.Button', action));
 toolbarItems.push("-");
-toolbarItems.push(Ext.create('Ext.button.Button', {text:'Clear Line Selection',handler: function() {antarcticSelectedLine.removeAllFeatures();},tooltip: "clear the red line selection after browsing echograms."}));
+toolbarItems.push(Ext.create('Ext.button.Button', {text:'clear line selection',handler: function() {antarcticSelectedLine.removeAllFeatures();},tooltip: "clear the red line selection after browsing echograms."}));
 toolbarItems.push("-");
 antarcticMapPanel.addDocked([{
 	xtype: 'toolbar',
