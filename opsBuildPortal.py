@@ -32,21 +32,24 @@ from distutils.dir_util import copy_tree
 curUser = getpass.getuser()
 curDate = str(datetime.datetime.now())
 
+# SET THE CUSTOM OL DIRECTORY
+olDir=os.getcwd()+'\\ol-custom\\ol'
+
 # PARSE INPUT ARGUMENTS
 parser = argparse.ArgumentParser(description='CReSIS OpenPolarServer ExtJS Custom Build Script')
 parser.add_argument('--testing',default=False,help='testing (boolean): should this be a test build (not minimized)')
-parser.add_argument('--olDir',default='S:\\dataproducts\\GIS_data\\ops\\OPS-OL-BUILD\\ol',help='olDir (string): absolute path to CReSIS OpenLayers build')
+parser.add_argument('--olDir',default=olDir,help='olDir (string): absolute path to CReSIS OpenLayers build')
 inArgs = parser.parse_args()
 
 # BUILD EXTJS AND COPY OL RESOURCE
 if inArgs.testing:
 	subprocess.call('sencha app build testing', stdin=None, stdout=None, stderr=None, shell=False) # BUILD TESTING
-	copy_tree(inArgs.olDir,os.getcwd()+'\\build\\testing\\OPS\\resources\\ol') # COPY OL BUILD SOURCE
+	copy_tree(olDir,os.getcwd()+'\\build\\testing\\OPS\\resources\\ol') # COPY OL BUILD SOURCE
 	indexFileObj = open(os.getcwd()+'\\build\\testing\\OPS\\index.html','w') # OPEN INDEX (CLEAR EXISTING CONTENTS)
 	logStr = 'TESTING BUILD CREATED ON %s BY %s\n' % (curDate,curUser) # CREATE LOG ENTRY
 else:
 	subprocess.call('sencha app build', stdin=None, stdout=None, stderr=None, shell=False) # BUILD PRODUCTION
-	copy_tree(inArgs.olDir,os.getcwd()+'\\build\\production\\OPS\\resources\\ol') # COPY OL BUILD SOURCE
+	copy_tree(olDir,os.getcwd()+'\\build\\production\\OPS\\resources\\ol') # COPY OL BUILD SOURCE
 	indexFileObj = open(os.getcwd()+'\\build\\production\\OPS\\index.html','w') # OPEN INDEX (CLEAR EXISTING CONTENTS)
 	logStr = 'PRODUCTION BUILD CREATED ON %s BY %s\n' % (curDate,curUser) # CREATE LOG ENTRY
 

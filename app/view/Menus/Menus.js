@@ -22,7 +22,7 @@ Ext.define('OPS.view.Menus.Menus' ,{
 			xtype: 'selectionmenu',
 			region: 'south',
 			collapsible: true,
-			bodyStyle: 'padding:15px',
+			bodyStyle: 'padding: 0px 15px 5px 15px',
 			overflowY: 'auto',
 			title: 'Data Selection'
 		},{

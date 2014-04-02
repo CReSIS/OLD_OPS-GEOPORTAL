@@ -91,13 +91,7 @@ action = Ext.create('GeoExt.Action', {
 });
 toolbarItems.push(Ext.create('Ext.button.Button', action));
 toolbarItems.push("-");
-toolbarItems.push(Ext.create('Ext.button.Button', {text:'clear line selection',handler: function() {arcticSelectedLine.removeAllFeatures();},tooltip: "clear the red line selection after browsing echograms."}));
-toolbarItems.push("-");
-arcticMapPanel.addDocked([{
-	xtype: 'toolbar',
-	dock: 'top',
-	items: toolbarItems
-}]);
+
 arcticMapPanel.map.events.register(
 	"click",
 	arcticMapPanel.map, 
@@ -184,6 +178,45 @@ function arcticRenderClosestFrame(response) {
 	setTimeout(renderImage,900);
 	setTimeout(Ext.getBody().unmask(),1000);
 };
+
+function arcticCloseEchogramBrowser() {
+
+	Ext.getBody().mask("Closing Echogram Browser");
+
+	arcticSelectedLine.removeAllFeatures();
+
+	// collapse layer tree
+	function expandTree() {
+		var treePanel = Ext.ComponentQuery.query('#arcticTree')[0];
+		treePanel.expand();
+	}
+	
+	// collapse menu
+	function expandMenu() {
+		var menusPanel = Ext.ComponentQuery.query('menus')[0];
+		menusPanel.expand();
+	}
+
+	// collapse echogram image
+	function collapseEchogram() {
+		var cArcticImageBrowserPanel = Ext.ComponentQuery.query('#arcticImageBrowserPanel')[0];
+		cArcticImageBrowserPanel.collapse();
+	}
+	
+	// execute the selection
+	setTimeout(collapseEchogram,0);
+	setTimeout(expandTree,100);
+	setTimeout(expandMenu,500);
+	setTimeout(Ext.getBody().unmask(),900);
+}
+
+toolbarItems.push(Ext.create('Ext.button.Button', {text:'close echogram browser',handler: arcticCloseEchogramBrowser,tooltip: "close the echogram browser and go back to the normal interface."}));
+toolbarItems.push("-");
+arcticMapPanel.addDocked([{
+	xtype: 'toolbar',
+	dock: 'top',
+	items: toolbarItems
+}]);
 
 var arcticStore = Ext.create('Ext.data.TreeStore', {
 	model: 'GeoExt.data.LayerTreeModel',

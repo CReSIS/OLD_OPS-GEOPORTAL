@@ -34,7 +34,7 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 		this.items = [
 			{
 				xtype: 'label',
-				html: '<h3 style="text-align:center;">Basic Selection Filters</h3>'
+				html: '<h3 style="text-align:center;">Basic Selection Filters</h4>'
 			},{
 				xtype: 'combo',
 				fieldLabel: 'Select System',
@@ -64,17 +64,7 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 				displayField: 'season',
 				valueField: 'season',
 				multiSelect: true
-			},/*{
-				xtype: 'combo',
-				fieldLabel: 'Select Layer/s',
-				itemId: 'selectedLayers',
-				store: 'Layers',
-				queryMode: 'local',
-				displayField: 'name',
-				valueField: 'name',
-				multiSelect: true
-			},*/
-			{
+			},{
 				xtype: 'button',
 				itemId: 'applyFilters',
 				text: 'Apply Filters To Map',
@@ -129,7 +119,7 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 				tooltip: 'Render the WKT Polygon to the map using the defined WKT Projection.'
 			},{
 				xtype: 'label',
-				html: '<h1><hr></h1><h3 style="text-align:center;">Download Settings</h3>'
+				html: '<h1><hr></h1><h3 style="text-align:center;">Download Settings</h3><p style="text-align:center;"> See [?] on the toolbar above for help/info.</p>'
 			},{
 				xtype: 'combo',
 				fieldLabel: 'Output Format',
@@ -138,6 +128,14 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 				queryMode: 'local',
 				displayField: 'name',
 				valueField: 'value'
+			},{
+				xtype: 'combo',
+				fieldLabel: 'Output Layer/s',
+				itemId: 'selectedLayers',
+				queryMode: 'local',
+				displayField: 'lyr_name',
+				valueField: 'lyr_name',
+				multiSelect: true
 			},{
 				xtype: 'button',
 				itemId: 'downloadData',

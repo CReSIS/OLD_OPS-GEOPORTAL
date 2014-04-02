@@ -126,9 +126,49 @@ Ext.define('OPS.controller.SelectionMenu', {
 					distinctSeasonsStore.sort('season','ASC');
 					
 					seasonCombo.bindStore(distinctSeasonsStore);
+					
+					if (!curSystem){
+						alert('ERROR: System must be selected');
+						return
+					};
+					
+					inputJSON = JSON.stringify({"none":"none"});
+					
+					Ext.Ajax.request({
+						method: 'POST',
+						url: '/ops/get/layers',
+						timeout: 1200000,
+						params: {'app':curSystem,'data':inputJSON},
+						success: function(response){
+							
+							responseJSON = JSON.parse(response.responseText);
+							
+							var outLayers = [];
+							for (var i=0;i<responseJSON.data.lyr_name.length;i++){
+								if (responseJSON.data.lyr_name[i] !== 'surface') {
+									outLayers.push([responseJSON.data.lyr_name[i]]);
+								}
+							};
+							
+							var layersCombo = Ext.ComponentQuery.query('#selectedLayers')[0];
+					
+							layerStore = new Ext.data.ArrayStore({
+								fields: ['lyr_name'],
+								data: outLayers
+							});
+							
+							layerStore.sort('lyr_name','ASC');
+							
+							layersCombo.bindStore(layerStore);
+							
+							layersCombo.setValue('bottom');
+						
+						},
+						failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+					});
 				}
 			},
-		
+			
 			'#stopDate': {
 				change: function() {
 					var stopDateValue = Ext.ComponentQuery.query('#stopDate')[0].value
@@ -243,7 +283,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 								'',
 								{
 									displayInLayerSwitcher:false,
-									styleMap: new OpenLayers.StyleMap({fillColor:'#DFE8F6',fillOpacity:0.7,strokeColor:'#000000'})
+									styleMap: new OpenLayers.StyleMap({fillColor:'white',fillOpacity:0.5,strokeColor:'#333333',strokeWidth:1,strokeOpacity:1,pointRadius:4,graphicName:'square'})
 								}
 							)
 							curMapPanel.map.addLayer(polygonBoundary)
@@ -286,6 +326,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					var selectedSeasons = Ext.ComponentQuery.query('#selectedSeasons')[0].value;
 					var startDate = Ext.ComponentQuery.query('#startDate')[0].getRawValue();
 					var stopDate = Ext.ComponentQuery.query('#stopDate')[0].getRawValue();
+					var selectedLayers = Ext.ComponentQuery.query('#selectedLayers')[0].value;
 					
 					if (typeof(polygonBoundary) === 'undefined') { 
 						alert('ERROR: Polygon Boundary must be created using Draw Polygon or Render WKT');
@@ -299,6 +340,12 @@ Ext.define('OPS.controller.SelectionMenu', {
 							useSeasons = true
 						}else {
 							useSeasons = false
+						}
+						
+						if (!selectedLayers || selectedLayers.length!=0) {
+							useLayers = true
+						}else {
+							useLayers = false
 						}
 						
 						if (!startDate){
@@ -322,11 +369,26 @@ Ext.define('OPS.controller.SelectionMenu', {
 									polygonBoundary.features[0].geometry.transform(new OpenLayers.Projection(inEPSG),new OpenLayers.Projection("EPSG:4326"));
 									var wkt = new OpenLayers.Format.WKT();
 									var outWkt = wkt.write(polygonBoundary.features[0]);
-					
-									if (useSeasons) {
-										var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg,'season':selectedSeasons}});
-									}else {
-										var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg}});
+									
+									if (outFormat === 'csv-good' || outFormat === 'csv' || outFormat === 'kml') {
+										if (useSeasons) {
+											var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg,'season':selectedSeasons}});
+										}else {
+											var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg}});
+										}
+									}else if (outFormat === 'mat'){
+										if (useSeasons && useLayers) {
+											var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg,'season':selectedSeasons,'layers':selectedLayers}});
+										}else if (useSeasons){
+											var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg,'season':selectedSeasons}});
+										}else if (useLayers){
+											var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg,'layers':selectedLayers}});
+										}else {
+											var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg}});
+										}
+									}else{
+										alert('NOTICE: OUTPUT FORMAT NOT CURRENTLY SUPPORTED');
+										return
 									}
 									
 									fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
@@ -432,7 +494,38 @@ Ext.define('OPS.controller.SelectionMenu', {
 										}
 										getKml(selectedSystem,inputJSON,downloadId);
 									}else if (outFormat === 'mat'){
-										alert('NOTICE: MAT FORMAT OUTPUT IN DEVELOPMENT');
+										downloadId = Math.floor(Math.random()*1000000);
+										fileDownloadStore.add({'id':downloadId,'location':curTab,'status':'Processing','stime':new Date().toLocaleTimeString(),'ftime':'','type':'mat','url':''});
+										fileDownloadStore.commitChanges();
+										function getMat(selectedSystem,inputJSON,downloadId) {
+											tmp = Ext.Ajax.request({
+												method: 'POST',
+												url: '/ops/get/layer/points/mat',
+												timeout: 1200000,
+												params: {'app':selectedSystem,'data':inputJSON},
+												success: function(response){
+													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
+													responseJSON = JSON.parse(response.responseText)
+													if (responseJSON.status == 1) {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Complete';
+														outRecord.data.url = responseJSON.data;
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit();
+														Ext.Msg.alert('NOTICE','Download is ready, see the Downloads tab.');
+													}else {
+														outRecord = fileDownloadStore.findRecord('id',downloadId);
+														outRecord.data.status = 'Error';
+														outRecord.data.ftime = new Date().toLocaleTimeString();
+														outRecord.commit();
+														Ext.Msg.alert('ERROR',responseJSON.data);
+													}
+														
+												},
+												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+											});
+										}
+										getMat(selectedSystem,inputJSON,downloadId);
 									}else if (outFormat === 'netcdf'){
 										alert('NOTICE: NETCDF FORMAT OUTPUT IN DEVELOPMENT');
 									}else{
