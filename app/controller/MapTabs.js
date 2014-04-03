@@ -29,6 +29,9 @@ Ext.define('OPS.controller.MapTabs', {
 						var seasonCombo = Ext.ComponentQuery.query('#selectedSeasons')[0];
 						seasonCombo.clearValue();
 						
+						var layersCombo = Ext.ComponentQuery.query('#selectedLayers')[0];
+						layersCombo.clearValue();
+						
 						var wktTextArea = Ext.ComponentQuery.query('#wktText')[0];
 						wktTextArea.setValue('');
 						

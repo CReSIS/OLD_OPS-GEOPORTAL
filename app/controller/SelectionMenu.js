@@ -20,7 +20,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					}else if (curTab === 'Antarctic') {
 						var curMapPanel = antarcticMapPanel;
 					}else{
-						alert('SYSTEM ERROR: Only Arctic/Antarctic Supported');
+						Ext.Msg.alert('SYSTEM ERROR','Make sure you are on the Arctic or Antarctic tab.');
 					};
 					
 					var selectedSystem = Ext.ComponentQuery.query('#selectedSystem')[0].value;
@@ -29,7 +29,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					var stopDate = Ext.ComponentQuery.query('#stopDate')[0].getRawValue();
 				
 					if (!selectedSystem){
-						alert('ERROR: System must be selected');
+						Ext.Msg.alert('ERROR','System must be selected');
 					}else{
 					
 						if (!selectedSeasons) { 
@@ -126,46 +126,6 @@ Ext.define('OPS.controller.SelectionMenu', {
 					distinctSeasonsStore.sort('season','ASC');
 					
 					seasonCombo.bindStore(distinctSeasonsStore);
-					
-					if (!curSystem){
-						alert('ERROR: System must be selected');
-						return
-					};
-					
-					inputJSON = JSON.stringify({"none":"none"});
-					
-					Ext.Ajax.request({
-						method: 'POST',
-						url: '/ops/get/layers',
-						timeout: 1200000,
-						params: {'app':curSystem,'data':inputJSON},
-						success: function(response){
-							
-							responseJSON = JSON.parse(response.responseText);
-							
-							var outLayers = [];
-							for (var i=0;i<responseJSON.data.lyr_name.length;i++){
-								if (responseJSON.data.lyr_name[i] !== 'surface') {
-									outLayers.push([responseJSON.data.lyr_name[i]]);
-								}
-							};
-							
-							var layersCombo = Ext.ComponentQuery.query('#selectedLayers')[0];
-					
-							layerStore = new Ext.data.ArrayStore({
-								fields: ['lyr_name'],
-								data: outLayers
-							});
-							
-							layerStore.sort('lyr_name','ASC');
-							
-							layersCombo.bindStore(layerStore);
-							
-							layersCombo.setValue('bottom');
-						
-						},
-						failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
-					});
 				}
 			},
 			
@@ -194,7 +154,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 						var outEPSG = "EPSG:3031";
 						var curMapPanel = antarcticMapPanel;
 					}else{
-						alert('SYSTEM ERROR: Only Arctic/Antarctic Supported');
+						Ext.Msg.alert('SYSTEM ERROR','Make sure you are on the Arctic or Antarctic tab.');
 					}
 					
 					if (typeof(polygonBoundary) !== 'undefined') {
@@ -244,7 +204,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					}else if (curTab === 'Antarctic') {
 						var curMapPanel = antarcticMapPanel;
 					}else{
-						alert('SYSTEM ERROR: Only Arctic/Antarctic Supported');
+						Ext.Msg.alert('SYSTEM ERROR','Make sure you are on the Arctic or Antarctic tab.');
 					}
 					
 					curMapPanel.map.removeLayer(polygonBoundary);
@@ -276,7 +236,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 								var outEPSG = "EPSG:3031";
 								var curMapPanel = antarcticMapPanel;
 							}else{
-								alert('SYSTEM ERROR: Only Arctic/Antarctic Supported');
+								Ext.Msg.alert('SYSTEM ERROR','Make sure you are on the Arctic or Antarctic tab.');
 							};
 							
 							polygonBoundary = new OpenLayers.Layer.Vector(
@@ -299,11 +259,11 @@ Ext.define('OPS.controller.SelectionMenu', {
 							curMapPanel.map.zoomToExtent(polygonBoundary.getDataExtent());
 							
 						}else{
-							alert('INPUT ERROR: WKT Polygon not defined.');
+							Ext.Msg.alert('INPUT ERROR','WKT Polygon not defined.');
 						}
 					
 					}else{
-						alert('INPUT ERROR: WKT Projection not selected.');
+						Ext.Msg.alert('INPUT ERROR','WKT Projection not selected.');
 					}
 				}
             },
@@ -317,7 +277,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					}else if (curTab === 'Antarctic') {
 						var inEPSG = "EPSG:3031";
 					}else{
-						alert('SYSTEM ERROR: Only Arctic/Antarctic Supported. You must be on the Arctic/Antarctic tab to submit downloads.');
+						Ext.Msg.alert('SYSTEM ERROR','Make sure you are on the Arctic or Antarctic tab.');
 						return
 					};
 					
@@ -329,11 +289,11 @@ Ext.define('OPS.controller.SelectionMenu', {
 					var selectedLayers = Ext.ComponentQuery.query('#selectedLayers')[0].value;
 					
 					if (typeof(polygonBoundary) === 'undefined') { 
-						alert('ERROR: Polygon Boundary must be created using Draw Polygon or Render WKT');
+						Ext.Msg.alert('ERROR','Polygon Boundary must be created using Draw Polygon or Render WKT');
 					}else if (!outFormat) { 
-						alert('ERROR: Output Format must be set.');
+						Ext.Msg.alert('ERROR','Output Format must be set.');
 					}else if (!selectedSystem){
-						alert('ERROR: System must be selected');
+						Ext.Msg.alert('ERROR','System must be selected');
 					}else {
 					
 						if (!selectedSeasons || selectedSeasons.length!=0) {
@@ -387,7 +347,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 											var inputJSON = JSON.stringify({'properties':{'bound':outWkt,'location':curTab.toLowerCase(),'startseg':startDateSeg,'stopseg':stopDateSeg}});
 										}
 									}else{
-										alert('NOTICE: OUTPUT FORMAT NOT CURRENTLY SUPPORTED');
+										Ext.Msg.alert('NOTIC','OUTPUT FORMAT NOT CURRENTLY SUPPORTED');
 										return
 									}
 									
@@ -527,9 +487,9 @@ Ext.define('OPS.controller.SelectionMenu', {
 										}
 										getMat(selectedSystem,inputJSON,downloadId);
 									}else if (outFormat === 'netcdf'){
-										alert('NOTICE: NETCDF FORMAT OUTPUT IN DEVELOPMENT');
+										Ext.Msg.alert('NOTICE','NETCDF FORMAT OUTPUT IN DEVELOPMENT');
 									}else{
-										alert('NOTICE: OUTPUT FORMAT NOT CURRENTLY SUPPORTED');
+										Ext.Msg.alert('NOTICE','OUTPUT FORMAT NOT CURRENTLY SUPPORTED');
 									}
 									
 									polygonBoundary.features[0].geometry.transform(new OpenLayers.Projection("EPSG:4326"),new OpenLayers.Projection(inEPSG));
@@ -539,6 +499,53 @@ Ext.define('OPS.controller.SelectionMenu', {
 						});
 					}
 				}
+			},
+			
+			'#selectedLayers': {
+				focus: function() {
+				
+					var curSystem = Ext.ComponentQuery.query('#selectedSystem')[0].value
+				
+					if (!curSystem){
+							Ext.Msg.alert('ERROR','System must be selected');
+							return
+						};
+						
+						inputJSON = JSON.stringify({"none":"none"});
+						
+						Ext.Ajax.request({
+							method: 'POST',
+							url: '/ops/get/layers',
+							timeout: 1200000,
+							params: {'app':curSystem,'data':inputJSON},
+							success: function(response){
+								
+								responseJSON = JSON.parse(response.responseText);
+								
+								var outLayers = [];
+								for (var i=0;i<responseJSON.data.lyr_name.length;i++){
+									if (responseJSON.data.lyr_name[i] !== 'surface') {
+										outLayers.push([responseJSON.data.lyr_name[i]]);
+									}
+								};
+								
+								var layersCombo = Ext.ComponentQuery.query('#selectedLayers')[0];
+						
+								layerStore = new Ext.data.ArrayStore({
+									fields: ['lyr_name'],
+									data: outLayers
+								});
+								
+								layerStore.sort('lyr_name','ASC');
+								
+								layersCombo.bindStore(layerStore);
+								
+								layersCombo.setValue('bottom');
+							
+							},
+							failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+						});
+					}
 			}
 		});
 	}
