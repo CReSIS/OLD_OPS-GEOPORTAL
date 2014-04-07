@@ -26,9 +26,16 @@ var arcticMapPanel = Ext.create('GeoExt.panel.Map', {
 		new OpenLayers.Layer.WMS("Greenland Coastline",arcticWms,{layers: 'arctic:greenland_coastline',transparent:true},{isBaseLayer:true,visibility:false}),
 		
 		new OpenLayers.Layer.WMS('Radar Depth Sounder',arcticWms,{layers: 'arctic:arctic_rds_line_paths',transparent:true},{isBaseLayer:false,visibility:true}),
+		new OpenLayers.Layer.WMS('Radar Depth Sounder Crossovers',arcticWms,{layers: 'arctic:arctic_rds_crossover_errors',transparent:true},{isBaseLayer:false,visibility:true}),
+		
 		new OpenLayers.Layer.WMS('Accumulation Radar',arcticWms,{layers: 'arctic:arctic_accum_line_paths',transparent:true},{isBaseLayer:false,visibility:false}),
+		new OpenLayers.Layer.WMS('Accumulation Radar Crossovers',arcticWms,{layers: 'arctic:arctic_accum_crossover_errors',transparent:true},{isBaseLayer:false,visibility:false}),
+		
 		new OpenLayers.Layer.WMS('Snow Radar',arcticWms,{layers: 'arctic:arctic_snow_line_paths',transparent:true},{isBaseLayer:false,visibility:false}),
+		new OpenLayers.Layer.WMS('Snow Radar Crossovers',arcticWms,{layers: 'arctic:arctic_snow_crossover_errors',transparent:true},{isBaseLayer:false,visibility:false}),
+		
 		new OpenLayers.Layer.WMS('KuBand Radar',arcticWms,{layers: 'arctic:arctic_kuband_line_paths',transparent:true},{isBaseLayer:false,visibility:false}),
+		new OpenLayers.Layer.WMS('KuBand Radar Crossovers',arcticWms,{layers: 'arctic:arctic_kuband_crossover_errors',transparent:true},{isBaseLayer:false,visibility:false}),
 		
 		arcticSelectedLine = new OpenLayers.Layer.Vector('',{displayInLayerSwitcher:false})
 	]
@@ -226,17 +233,39 @@ var arcticStore = Ext.create('Ext.data.TreeStore', {
 			{
 				plugins: [{
 					ptype: 'gx_overlaylayercontainer',
-					loader: {store: arcticMapPanel.layers}
+					loader: {
+						store: arcticMapPanel.layers,
+						createNode: function(attr) {
+						attr.component = {
+							xtype: "gx_wmslegend",
+							layerRecord: arcticMapPanel.layers.getByLayer(attr.layer),
+							showTitle: false,
+							cls: "legend"
+						};
+						return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
+						}
+					}
 				}],
-				expanded: true,
+				expanded: false,
 				text: 'Data Layers'
 			},
 			{
 				plugins: [{
 					ptype: 'gx_baselayercontainer',
-					loader: {store: arcticMapPanel.layers}
+					loader: {
+						store: arcticMapPanel.layers,
+						createNode: function(attr) {
+						attr.component = {
+							xtype: "gx_wmslegend",
+							layerRecord: arcticMapPanel.layers.getByLayer(attr.layer),
+							showTitle: false,
+							cls: "legend"
+						};
+						return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
+						}
+					}
 				}],
-				expanded: true,
+				expanded: false,
 				text: 'Reference Layers'
 			}
 		]
