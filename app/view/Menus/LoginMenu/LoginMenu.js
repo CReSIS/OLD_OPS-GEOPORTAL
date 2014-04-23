@@ -26,8 +26,16 @@ Ext.define('OPS.view.Menus.LoginMenu.LoginMenu' ,{
 				xtype: 'button',
 				itemId: 'userLogin',
 				text: 'Login',
-				scale: 'medium',
-				width: 255
+				scale: 'small',
+				width: 255,
+				tooltip: 'Login to the OPS system for access to custom datasets authorized to you by CReSIS.'
+			},{
+				xtype: 'button',
+				itemId: 'userLogout',
+				text: 'Logout',
+				scale: 'small',
+				width: 255,
+				tooltip: 'Logout of the OPS system. This will happen automatically.'
 			},{
 				xtype: 'label',
 				html: '<p style="text-align:center;">Authentication not required for CReSIS data.</p>'
@@ -36,7 +44,12 @@ Ext.define('OPS.view.Menus.LoginMenu.LoginMenu' ,{
 				itemId: 'requestAccount',
 				text: 'Request Account',
 				scale: 'medium',
-				width: 255
+				width: 255,
+				tooltip: 'Request an OPS account. Only do this is you have your own non-public data in the OPS system.'
+			},{
+				xtype: 'label',
+				itemId: 'loginStatus',
+				html: '<h3 style="text-align:center;">No user logged in.</h3>'
 			}
 		]
 

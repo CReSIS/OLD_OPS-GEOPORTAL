@@ -137,6 +137,24 @@ function antarcticRenderClosestFrame(response) {
 	responseData = JSON.parse(response);
 	if (responseData.status == 0){alert(responseData.data); return};
 
+	// add the echograms to the dropdown menu
+	var outEchogramUrls = [];
+	var outEchogramNames = ['Echogram','Echogram + Layers'];
+
+	for (var i=0;i<responseData.data.echograms.length;i++){
+		outEchogramUrls.push([responseData.data.echograms[i],outEchogramNames[i]]);
+	};
+	
+	var echogramCombo = Ext.ComponentQuery.query('#antarcticEchogramSelector')[0];
+	echogramCombo.setValue('');
+	
+	echogramStore = new Ext.data.ArrayStore({
+		fields: ['echogram_url','echogram_name'],
+		data: outEchogramUrls
+	});
+	
+	echogramCombo.bindStore(echogramStore);
+
 	// collapse layer tree
 	function collapseTree() {
 		var treePanel = Ext.ComponentQuery.query('#antarcticTree')[0];
@@ -153,15 +171,26 @@ function antarcticRenderClosestFrame(response) {
 	function renderLine() {
 		antarcticSelectedLine.removeAllFeatures();
 		var points = new Array();
+		var startX = responseData.data.X[0];
+		var startY = responseData.data.Y[0];
+		minGps = responseData.data.gps_time[0];
 		for (idx=0;idx<=responseData.data.X.length;idx++){
 			if (!isNaN(responseData.data.X[idx])){
+				if (responseData.data.gps_time[idx] < minGps){
+					minGps = responseData.data.gps_time[idx]
+					startX = responseData.data.X[idx]
+					startY = responseData.data.Y[idx]
+				}
 				points.push(new OpenLayers.Geometry.Point(responseData.data.X[idx],responseData.data.Y[idx]))
 			}
 		};
+		var startPoint = new OpenLayers.Geometry.Point(startX,startY);
+		var startPointStyle = {fillColor: '#FF0000' ,pointRadius: 10,strokeColor:'#FF0000'};
 		var line = new OpenLayers.Geometry.LineString(points);
 		var style = {strokeColor: '#FF0000',strokeWidth: 5};
-		var linefeature = new OpenLayers.Feature.Vector(line,null,style);
-		antarcticSelectedLine.addFeatures([linefeature]);
+		var lineFeature = new OpenLayers.Feature.Vector(line,null,style);
+		var pointFeature = new OpenLayers.Feature.Vector(startPoint,null,startPointStyle);
+		antarcticSelectedLine.addFeatures([lineFeature,pointFeature]);
 		antarcticSelectedLine.redraw(true);
 	}
 	
@@ -275,7 +304,7 @@ var antarcticTree = Ext.create('GeoExt.tree.Panel', {
 	itemId: 'antarcticTree',
 	region: 'east',
 	title: 'Map Layer Selection',
-	width: 200,
+	width: 250,
 	collapsible: true,
 	autoScroll: true,
 	store: antarcticStore,
@@ -290,6 +319,44 @@ var antarcticEchogramPanel = Ext.create('Ext.Panel', {
 		collapsible: true,
 		bodyStyle: 'padding:0px'
 	},
+	dockedItems: [{
+		xtype: 'toolbar',
+		dock: 'top',
+		items: [
+			{
+				xtype: 'button',
+				itemId: 'echogramNotice',
+				text: 'Echogram Information',
+				scale: 'small',
+				width: 150,
+				handler: function() {Ext.Msg.alert('NOTICE','Echogram images are static previews and may not represent the most recent data. They should be used for reference only.')}
+			},{
+				xtype: 'combo',
+				fieldLabel: 'Echogram Image',
+				itemId: 'antarcticEchogramSelector',
+				queryMode: 'local',
+				displayField: 'echogram_name',
+				valueField: 'echogram_url',
+				width: 300
+			},{
+				xtype: 'button',
+				itemId: 'loadEchogramImage',
+				text: 'Draw Echogram',
+				scale: 'small',
+				width: 150,
+				handler: function() {
+					var cAntarcticImageBrowserPanel = Ext.ComponentQuery.query('#antarcticImageBrowserPanel')[0];
+					cAntarcticImageBrowserPanel.removeAll();
+					cAntarcticImageBrowserPanel.expand();
+					var antarcticEchogramImage = Ext.create('Ext.Img', {
+						id: 'antarcticEchogramImage',
+						src:  Ext.ComponentQuery.query('#antarcticEchogramSelector')[0].value
+					});
+					cAntarcticImageBrowserPanel.add(antarcticEchogramImage);
+				}
+			}
+		]
+	}],
 	region: 'west',
 	title: 'Echogram Image Browser',
 	collapsible: true,

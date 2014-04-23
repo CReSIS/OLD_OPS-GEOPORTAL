@@ -110,7 +110,6 @@ Ext.define('OPS.controller.SelectionMenu', {
 					systemStore.clearFilter()
 					systemStore.filter('system',curSystem);
 					systemStore.filter('location',curLocation);
-					systemStore.filter('public',true);
 					var distinctSeasons = systemStore.collect('season');
 					var outSeasons = [];
 					for (var i=0;i<distinctSeasons.length;i++){

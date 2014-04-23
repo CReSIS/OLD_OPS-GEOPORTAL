@@ -137,7 +137,25 @@ function arcticRenderClosestFrame(response) {
 	// decode the response and error check
 	responseData = JSON.parse(response);
 	if (responseData.status == 0){alert(responseData.data); return};
-
+	
+	// add the echograms to the dropdown menu
+	var outEchogramUrls = [];
+	var outEchogramNames = ['Echogram','Echogram + Layers'];
+	
+	for (var i=0;i<responseData.data.echograms.length;i++){
+		outEchogramUrls.push([responseData.data.echograms[i],outEchogramNames[i]]);
+	};
+	
+	var echogramCombo = Ext.ComponentQuery.query('#arcticEchogramSelector')[0];
+	echogramCombo.setValue('');
+	
+	echogramStore = new Ext.data.ArrayStore({
+		fields: ['echogram_url','echogram_name'],
+		data: outEchogramUrls
+	});
+	
+	echogramCombo.bindStore(echogramStore);
+	
 	// collapse layer tree
 	function collapseTree() {
 		var treePanel = Ext.ComponentQuery.query('#arcticTree')[0];
@@ -154,15 +172,26 @@ function arcticRenderClosestFrame(response) {
 	function renderLine() {
 		arcticSelectedLine.removeAllFeatures();
 		var points = new Array();
+		var startX = responseData.data.X[0];
+		var startY = responseData.data.Y[0];
+		minGps = responseData.data.gps_time[0];
 		for (idx=0;idx<=responseData.data.X.length;idx++){
 			if (!isNaN(responseData.data.X[idx])){
+				if (responseData.data.gps_time[idx] < minGps){
+					minGps = responseData.data.gps_time[idx]
+					startX = responseData.data.X[idx]
+					startY = responseData.data.Y[idx]
+				}
 				points.push(new OpenLayers.Geometry.Point(responseData.data.X[idx],responseData.data.Y[idx]))
 			}
 		};
+		var startPoint = new OpenLayers.Geometry.Point(startX,startY);
+		var startPointStyle = {fillColor: '#FF0000' ,pointRadius: 10,strokeColor:'#FF0000'};
 		var line = new OpenLayers.Geometry.LineString(points);
 		var style = {strokeColor: '#FF0000',strokeWidth: 5};
-		var linefeature = new OpenLayers.Feature.Vector(line,null,style);
-		arcticSelectedLine.addFeatures([linefeature]);
+		var lineFeature = new OpenLayers.Feature.Vector(line,null,style);
+		var pointFeature = new OpenLayers.Feature.Vector(startPoint,null,startPointStyle);
+		arcticSelectedLine.addFeatures([lineFeature,pointFeature]);
 		arcticSelectedLine.redraw(true);
 	}
 	
@@ -276,7 +305,7 @@ var arcticTree = Ext.create('GeoExt.tree.Panel', {
 	itemId: 'arcticTree',
 	region: 'east',
 	title: 'Map Layer Selection',
-	width: 200,
+	width: 250,
 	collapsible: true,
 	autoScroll: true,
 	store: arcticStore,
@@ -291,6 +320,44 @@ var arcticEchogramPanel = Ext.create('Ext.Panel', {
 		collapsible: true,
 		bodyStyle: 'padding:0px'
 	},
+	dockedItems: [{
+		xtype: 'toolbar',
+		dock: 'top',
+		items: [
+			{
+				xtype: 'button',
+				itemId: 'echogramNotice',
+				text: 'Echogram Information',
+				scale: 'small',
+				width: 150,
+				handler: function() {Ext.Msg.alert('NOTICE','Echogram images are static previews and may not represent the most recent data. They should be used for reference only.')}
+			},{
+				xtype: 'combo',
+				fieldLabel: 'Echogram Image',
+				itemId: 'arcticEchogramSelector',
+				queryMode: 'local',
+				displayField: 'echogram_name',
+				valueField: 'echogram_url',
+				width: 300
+			},{
+				xtype: 'button',
+				itemId: 'loadEchogramImage',
+				text: 'Draw Echogram',
+				scale: 'small',
+				width: 150,
+				handler: function() {
+					var cArcticImageBrowserPanel = Ext.ComponentQuery.query('#arcticImageBrowserPanel')[0];
+					cArcticImageBrowserPanel.removeAll();
+					cArcticImageBrowserPanel.expand();
+					var arcticEchogramImage = Ext.create('Ext.Img', {
+						id: 'arcticEchogramImage',
+						src:  Ext.ComponentQuery.query('#arcticEchogramSelector')[0].value
+					});
+					cArcticImageBrowserPanel.add(arcticEchogramImage);
+				}
+			}
+		]
+	}],
 	region: 'west',
 	title: 'Echogram Image Browser',
 	collapsible: true,

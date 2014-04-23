@@ -79,14 +79,14 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 				itemId: 'drawPolygon',
 				text: 'Draw A Polygon',
 				scale: 'small',
-				width: 126,
+				width: 255,
 				tooltip: 'Draw a polygon on the map to select an area for download, see map help for more.'
 			},{
 				xtype: 'button',
 				itemId: 'clearDrawing',
 				text: 'Clear Drawing',
 				scale: 'small',
-				width: 126,
+				width: 255,
 				tooltip: 'Clear any drawing made on the map. This is also applied by clicking "Draw A Polygon" again.'
 			},{
 				xtype: 'label',
