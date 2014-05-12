@@ -7,7 +7,8 @@ Ext.define('OPS.view.MapTabs.MapTabs' ,{
 	requires: [
 		'OPS.view.MapTabs.ArcticTab.ArcticTab',
 		'OPS.view.MapTabs.AntarcticTab.AntarcticTab',
-		'OPS.view.MapTabs.DownloadTab.DownloadTab'
+		'OPS.view.MapTabs.DownloadTab.DownloadTab',
+		'OPS.view.Crossovers.Crossovers'
 	],
 	
 	initComponent: function() {

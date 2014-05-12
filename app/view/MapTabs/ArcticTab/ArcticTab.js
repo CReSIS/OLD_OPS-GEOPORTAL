@@ -98,7 +98,8 @@ action = Ext.create('GeoExt.Action', {
 });
 toolbarItems.push(Ext.create('Ext.button.Button', action));
 toolbarItems.push("-");
-toolbarItems.push(Ext.create('Ext.button.Button', {text:'Crossovers Menu',handler: function() {Ext.ComponentQuery.query('#Crossovers').open();},tooltip: 'open the crossovers menu.'}));
+toolbarItems.push(Ext.create('Ext.button.Button', {text:'crossovers menu',handler: function() {Ext.ComponentQuery.query('#crossovers').open();},tooltip: 'open the crossovers menu.'}));
+toolbarItems.push("-");
 
 arcticMapPanel.map.events.register(
 	"click",

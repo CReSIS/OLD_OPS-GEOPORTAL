@@ -2,7 +2,7 @@ Ext.define('OPS.view.Crossovers.Crossovers' ,{
     
 	extend: 'Ext.Panel',
 	alias: 'widget.crossovers',
-	title: 'Crossover Menu',
+	title: 'Crossovers Menu',
 		
 	defaults: {
 		draggable: true,
