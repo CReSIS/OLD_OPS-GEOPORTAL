@@ -68,7 +68,7 @@ Ext.define('OPS.controller.LoginMenu', {
 							if (responseJSON.status == 1) {
 								
 								Ext.Msg.alert('NOTICE',responseJSON.data);
-								Ext.ComponentQuery.query('#username')[0].setValue('')
+								Ext.ComponentQuery.query('#userName')[0].setValue('')
 								Ext.ComponentQuery.query('#password')[0].setValue('')
 								Ext.ComponentQuery.query('#loginStatus')[0].update('<h3 style="text-align:center;">User ' + username + ' logged in.</h3>')
 								var systemStore = Ext.getStore('Systems');

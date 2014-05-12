@@ -26,7 +26,7 @@ var arcticMapPanel = Ext.create('GeoExt.panel.Map', {
 		new OpenLayers.Layer.WMS("Greenland Coastline",arcticWms,{layers: 'arctic:greenland_coastline',transparent:true},{isBaseLayer:true,visibility:false}),
 		
 		new OpenLayers.Layer.WMS('Radar Depth Sounder',arcticWms,{layers: 'arctic:arctic_rds_line_paths',transparent:true},{isBaseLayer:false,visibility:true}),
-		new OpenLayers.Layer.WMS('Radar Depth Sounder Crossovers',arcticWms,{layers: 'arctic:arctic_rds_crossover_errors',transparent:true},{isBaseLayer:false,visibility:true}),
+		new OpenLayers.Layer.WMS('Radar Depth Sounder Crossovers',arcticWms,{layers: 'arctic:arctic_rds_crossover_errors',transparent:true},{isBaseLayer:false,visibility:false}),
 		
 		new OpenLayers.Layer.WMS('Accumulation Radar',arcticWms,{layers: 'arctic:arctic_accum_line_paths',transparent:true},{isBaseLayer:false,visibility:false}),
 		new OpenLayers.Layer.WMS('Accumulation Radar Crossovers',arcticWms,{layers: 'arctic:arctic_accum_crossover_errors',transparent:true},{isBaseLayer:false,visibility:false}),
@@ -246,8 +246,8 @@ function arcticCloseEchogramBrowser() {
 	setTimeout(Ext.getBody().unmask(),900);
 }
 
-toolbarItems.push(Ext.create('Ext.button.Button', {text:'close echogram browser',handler: arcticCloseEchogramBrowser,tooltip: "close the echogram browser and go back to the normal interface."}));
-toolbarItems.push("-");
+/*toolbarItems.push(Ext.create('Ext.button.Button', {text:'close echogram browser',handler: arcticCloseEchogramBrowser,tooltip: "close the echogram browser and go back to the normal interface."}));
+toolbarItems.push("-");*/
 arcticMapPanel.addDocked([{
 	xtype: 'toolbar',
 	dock: 'top',
@@ -355,6 +355,13 @@ var arcticEchogramPanel = Ext.create('Ext.Panel', {
 					});
 					cArcticImageBrowserPanel.add(arcticEchogramImage);
 				}
+			},{
+				xtype: 'button',
+				itemId: 'closeEchogramBrowser',
+				text: 'Close Echogram Browser',
+				scale: 'small',
+				width: 150,
+				handler: arcticCloseEchogramBrowser()
 			}
 		]
 	}],

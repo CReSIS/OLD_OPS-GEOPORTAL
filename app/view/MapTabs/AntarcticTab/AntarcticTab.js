@@ -25,7 +25,7 @@ var antarcticMapPanel = Ext.create('GeoExt.panel.Map', {
 		new OpenLayers.Layer.WMS("Antarctica Coastline",antarcticWms,{layers: 'antarctic:antarctica_coastline',transparent:true},{isBaseLayer:true,visibility:false}),
 		
 		new OpenLayers.Layer.WMS("Radar Depth Sounder",antarcticWms,{layers: 'antarctic:antarctic_rds_line_paths',transparent:true},{isBaseLayer:false,visibility:true}),
-		new OpenLayers.Layer.WMS("Radar Depth Sounder Crossovers",antarcticWms,{layers: 'antarctic:antarctic_rds_crossover_errors',transparent:true},{isBaseLayer:false,visibility:true}),
+		new OpenLayers.Layer.WMS("Radar Depth Sounder Crossovers",antarcticWms,{layers: 'antarctic:antarctic_rds_crossover_errors',transparent:true},{isBaseLayer:false,visibility:false}),
 		
 		new OpenLayers.Layer.WMS("Accumulation Radar",antarcticWms,{layers: 'antarctic:antarctic_accum_line_paths',transparent:true},{isBaseLayer:false,visibility:false}),
 		new OpenLayers.Layer.WMS("Accumulation Radar Crossovers",antarcticWms,{layers: 'antarctic:antarctic_accum_crossover_errors',transparent:true},{isBaseLayer:false,visibility:false}),
@@ -245,8 +245,8 @@ function antarcticCloseEchogramBrowser() {
 	setTimeout(Ext.getBody().unmask(),900);
 }
 
-toolbarItems.push(Ext.create('Ext.button.Button', {text:'close echogram browser',handler: antarcticCloseEchogramBrowser,tooltip: "close the echogram browser and go back to the normal interface."}));
-toolbarItems.push("-");
+/*toolbarItems.push(Ext.create('Ext.button.Button', {text:'close echogram browser',handler: antarcticCloseEchogramBrowser,tooltip: "close the echogram browser and go back to the normal interface."}));
+toolbarItems.push("-");*/
 antarcticMapPanel.addDocked([{
 	xtype: 'toolbar',
 	dock: 'top',
@@ -354,6 +354,13 @@ var antarcticEchogramPanel = Ext.create('Ext.Panel', {
 					});
 					cAntarcticImageBrowserPanel.add(antarcticEchogramImage);
 				}
+			},{
+				xtype: 'button',
+				itemId: 'closeEchogramBrowser',
+				text: 'Close Echogram Browser',
+				scale: 'small',
+				width: 150,
+				handler: antarcticCloseEchogramBrowser()
 			}
 		]
 	}],
