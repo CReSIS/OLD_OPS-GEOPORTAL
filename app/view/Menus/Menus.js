@@ -7,6 +7,7 @@ Ext.define('OPS.view.Menus.Menus' ,{
 	layout: 'accordion',
 	
 	defaults: {
+		collapsed: true,
         titleCollapse: false,
         animate: true
 	},

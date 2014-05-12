@@ -215,37 +215,6 @@ function arcticRenderClosestFrame(response) {
 	setTimeout(Ext.getBody().unmask(),1000);
 };
 
-function arcticCloseEchogramBrowser() {
-
-	Ext.getBody().mask("Closing Echogram Browser");
-
-	arcticSelectedLine.removeAllFeatures();
-
-	// collapse layer tree
-	function expandTree() {
-		var treePanel = Ext.ComponentQuery.query('#arcticTree')[0];
-		treePanel.expand();
-	}
-	
-	// collapse menu
-	function expandMenu() {
-		var menusPanel = Ext.ComponentQuery.query('menus')[0];
-		menusPanel.expand();
-	}
-
-	// collapse echogram image
-	function collapseEchogram() {
-		var cArcticImageBrowserPanel = Ext.ComponentQuery.query('#arcticImageBrowserPanel')[0];
-		cArcticImageBrowserPanel.collapse();
-	}
-	
-	// execute the selection
-	setTimeout(collapseEchogram,0);
-	setTimeout(expandTree,100);
-	setTimeout(expandMenu,500);
-	setTimeout(Ext.getBody().unmask(),900);
-}
-
 /*toolbarItems.push(Ext.create('Ext.button.Button', {text:'close echogram browser',handler: arcticCloseEchogramBrowser,tooltip: "close the echogram browser and go back to the normal interface."}));
 toolbarItems.push("-");*/
 arcticMapPanel.addDocked([{
@@ -341,7 +310,7 @@ var arcticEchogramPanel = Ext.create('Ext.Panel', {
 				width: 300
 			},{
 				xtype: 'button',
-				itemId: 'loadEchogramImage',
+				itemId: 'arcticLoadEchogramImage',
 				text: 'Draw Echogram',
 				scale: 'small',
 				width: 150,
@@ -357,11 +326,40 @@ var arcticEchogramPanel = Ext.create('Ext.Panel', {
 				}
 			},{
 				xtype: 'button',
-				itemId: 'closeEchogramBrowser',
+				itemId: 'arcticCloseEchogramBrowser',
 				text: 'Close Echogram Browser',
 				scale: 'small',
 				width: 150,
-				handler: arcticCloseEchogramBrowser()
+				handler: function() {
+				
+					Ext.getBody().mask("Closing Echogram Browser");
+
+					arcticSelectedLine.removeAllFeatures();
+
+					// collapse layer tree
+					function expandTree() {
+						var treePanel = Ext.ComponentQuery.query('#arcticTree')[0];
+						treePanel.expand();
+					}
+					
+					// collapse menu
+					function expandMenu() {
+						var menusPanel = Ext.ComponentQuery.query('menus')[0];
+						menusPanel.expand();
+					}
+
+					// collapse echogram image
+					function collapseEchogram() {
+						var cArcticImageBrowserPanel = Ext.ComponentQuery.query('#arcticImageBrowserPanel')[0];
+						cArcticImageBrowserPanel.collapse();
+					}
+					
+					// execute the selection
+					setTimeout(collapseEchogram,0);
+					setTimeout(expandTree,100);
+					setTimeout(expandMenu,500);
+					setTimeout(Ext.getBody().unmask(),900);
+				}
 			}
 		]
 	}],
