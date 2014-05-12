@@ -978,6 +978,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "OPS.store.EpsgWktProjs": [],
   "OPS.store.FileDownloads": [],
   "OPS.store.Systems": [],
+  "OPS.view.Crossovers.Crossovers": [],
   "OPS.view.FooterBar": [],
   "OPS.view.HeaderBar": [],
   "OPS.view.MapTabs.AntarcticTab.AntarcticTab": [],
@@ -2145,6 +2146,9 @@ Ext.ClassManager.addNameAliasMappings({
   "OPS.store.EpsgWktProjs": [],
   "OPS.store.FileDownloads": [],
   "OPS.store.Systems": [],
+  "OPS.view.Crossovers.Crossovers": [
+    "widget.crossovers"
+  ],
   "OPS.view.FooterBar": [
     "widget.footerbar"
   ],

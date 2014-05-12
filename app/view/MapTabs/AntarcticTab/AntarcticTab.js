@@ -250,7 +250,7 @@ var antarcticStore = Ext.create('Ext.data.TreeStore', {
 				plugins: [{
 					ptype: 'gx_baselayercontainer',
 					loader: {
-						store: antarcticMapPanel.layers,
+						store: antarcticMapPanel.layers
 						/*createNode: function(attr) {
 							attr.component = {
 								xtype: "gx_wmslegend",

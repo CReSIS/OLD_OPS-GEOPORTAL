@@ -21,8 +21,8 @@ Ext.define('OPS.Application', {
 		'MapTabs.DownloadTab.DownloadTab',
 		'Menus.Menus',
 		'Menus.SelectionMenu.SelectionMenu',
-		'Menus.LoginMenu.LoginMenu',
-		'Crossovers.Crossovers'
+		'Menus.LoginMenu.LoginMenu'
+		//'Crossovers.Crossovers'
     ],
 
     controllers: [
