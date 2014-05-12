@@ -31,6 +31,7 @@ Ext.define('OPS.view.Viewport', {
 				region: 'west',
 				margins: '0 5 0 5',
 				collapsible: true,
+				collapsed: true,
 				bodyStyle: 'padding:0px',
 				width: 300,
 				minWidth: 300,
