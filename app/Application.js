@@ -22,7 +22,7 @@ Ext.define('OPS.Application', {
 		'Menus.Menus',
 		'Menus.SelectionMenu.SelectionMenu',
 		'Menus.LoginMenu.LoginMenu',
-		'Crossovers.Croossovers'
+		'Crossovers.Crossovers'
     ],
 
     controllers: [
