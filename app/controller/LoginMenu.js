@@ -48,7 +48,7 @@ Ext.define('OPS.controller.LoginMenu', {
 			'#userLogin': {
 				click: function() {
 				
-					var username = Ext.ComponentQuery.query('#userName')[0].value;
+					var username = Ext.ComponentQuery.query('#username')[0].value;
 					var password = Ext.ComponentQuery.query('#password')[0].value;
 					
 					if (! username || ! password) {
