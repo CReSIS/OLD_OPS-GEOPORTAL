@@ -12,8 +12,11 @@ Ext.define('OPS.controller.MapTabs', {
 			'#maptabs':{
 				tabchange: function(tabPanel,newCard,oldCard) {
 					
-					newTab = newCard.tab.text;
-					oldTab = oldCard.tab.text;
+					var newTab = newCard.tab.text;
+					var oldTab = oldCard.tab.text;
+					
+					var menusPanel = Ext.ComponentQuery.query('menus')[0];
+						menusPanel.expand();
 					
 					if ((newTab == "Arctic" && oldTab == "Antarctic") || (newTab == "Antarctic" && oldTab == "Arctic")) {
 					
@@ -38,8 +41,6 @@ Ext.define('OPS.controller.MapTabs', {
 						var wktProjCombo = Ext.ComponentQuery.query('#wktProj')[0];
 						wktProjCombo.clearValue();
 						
-						var menusPanel = Ext.ComponentQuery.query('menus')[0];
-						menusPanel.expand();
 					
 					}
 				}
