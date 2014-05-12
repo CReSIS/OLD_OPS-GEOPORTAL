@@ -231,25 +231,6 @@ var antarcticStore = Ext.create('Ext.data.TreeStore', {
 				plugins: [{
 					ptype: 'gx_overlaylayercontainer',
 					loader: {
-						store: antarcticMapPanel.layers,
-						createNode: function(attr) {
-							attr.component = {
-								xtype: "gx_wmslegend",
-								layerRecord: antarcticMapPanel.layers.getByLayer(attr.layer),
-								showTitle: false,
-								cls: "legend"
-							};
-							return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
-						}
-					}
-				}],
-				expanded: false,
-				text: 'Data Layers'
-			},
-			{
-				plugins: [{
-					ptype: 'gx_baselayercontainer',
-					loader: {
 						store: antarcticMapPanel.layers
 						/*createNode: function(attr) {
 							attr.component = {
@@ -260,6 +241,25 @@ var antarcticStore = Ext.create('Ext.data.TreeStore', {
 							};
 							return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
 						}*/
+					}
+				}],
+				expanded: false,
+				text: 'Data Layers'
+			},
+			{
+				plugins: [{
+					ptype: 'gx_baselayercontainer',
+					loader: {
+						store: antarcticMapPanel.layers,
+						createNode: function(attr) {
+							attr.component = {
+								xtype: "gx_wmslegend",
+								layerRecord: antarcticMapPanel.layers.getByLayer(attr.layer),
+								showTitle: false,
+								cls: "legend"
+							};
+							return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
+						}
 					}
 				}],
 				expanded: false,

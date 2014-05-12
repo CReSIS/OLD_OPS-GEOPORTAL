@@ -15,7 +15,7 @@ Ext.define('OPS.view.MapTabs.MapTabs' ,{
 		
 		this.items = [
 			{
-				title: 'OpenPolarServer',
+				title: 'Welcome',
 				xtype: 'box',
 				autoEl: {
 					tag: 'iframe',
