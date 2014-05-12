@@ -6,6 +6,7 @@ Ext.define('OPS.view.Viewport', {
 		'OPS.view.HeaderBar',
 		'OPS.view.FooterBar',
 		'OPS.view.MapTabs.MapTabs',
+		'OPS.view.Crossovers.Crossovers',
 		'OPS.Global'
 	],
 
