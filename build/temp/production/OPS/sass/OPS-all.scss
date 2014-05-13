@@ -1,5 +1,5 @@
 $image-search-path: 'C:/Users/kpurdon.HOME/Documents/Projects/github/OPS-GEOPORTAL/build/production/OPS/resources';
-$theme-name:  'ext-theme-classic' !default;
+$theme-name:  'ext-theme-gray' !default;
 $include-ext-abstractcomponent: true;
 $include-ext-abstractmanager: true;
 $include-ext-abstractplugin: true;
@@ -628,6 +628,24 @@ $include-ops-view-viewport: true;
 @import '../../../../../ext/packages/ext-theme-neutral/sass/etc/all';
 /* including package ext-theme-classic */
 @import '../../../../../ext/packages/ext-theme-classic/sass/etc/all';
+/* including package ext-theme-gray */
+@import '../../../../../ext/packages/ext-theme-gray/sass/etc/all';
+/* including package ext-theme-gray */
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/Component';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/ProgressBar';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/button/Button';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/toolbar/Toolbar';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/panel/Panel';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/tip/Tip';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/container/ButtonGroup';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/window/Window';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/form/FieldSet';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/view/BoundList';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/picker/Date';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/grid/column/Column';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/layout/container/Accordion';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/menu/Menu';
+@import '../../../../../ext/packages/ext-theme-gray/sass/var/tab/Tab';
 /* including package ext-theme-classic */
 @import '../../../../../ext/packages/ext-theme-classic/sass/var/Component';
 @import '../../../../../ext/packages/ext-theme-classic/sass/var/LoadMask';

@@ -19,7 +19,7 @@ Ext.define('OPS.view.Viewport', {
 
 	initComponent: function() {
 			
-		this.items = [{
+		this.items = [/*{
 				xtype: 'headerbar',
 				region: 'north',
 				margins: '5 5 5 5',
@@ -27,7 +27,7 @@ Ext.define('OPS.view.Viewport', {
 				maxSize: 0,
 				collapsed: true,
 				hideCollapseTool: true
-			},{
+			},*/{
 				xtype: 'menus',
 				region: 'west',
 				margins: '0 5 0 5',
@@ -44,7 +44,7 @@ Ext.define('OPS.view.Viewport', {
 				bodyStyle: 'padding:0px',
 				collapsible: false,
 				header: false
-			},{
+			}/*,{
 				xtype: 'footerbar',
 				region: 'south',
 				margins: '5 5 5 5',
@@ -52,7 +52,7 @@ Ext.define('OPS.view.Viewport', {
 				maxSize: 0,
 				collapsed: true,
 				hideCollapseTool: true
-			}]
+			}*/]
 		
 		this.callParent();
 	}
