@@ -85,6 +85,9 @@ Ext.define('OPS.controller.SelectionMenu', {
 					curLocation = curTab.toLowerCase();
 					
 					var systemStore = Ext.getStore('Systems');
+					
+					if(systemStore.getCount() == 0) { systemStore.load(); }
+					
 					systemStore.clearFilter()
 					var distinctSystems = systemStore.collect('system');
 					var outSystems = [];
@@ -360,7 +363,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 											tmp = Ext.Ajax.request({
 												method: 'POST',
 												url: '/ops/get/layer/points/csv',
-												timeout: 1200000,
+												timeout: 3600000,
 												params: {'app':selectedSystem,'data':inputJSON},
 												success: function(response){
 													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
@@ -380,7 +383,13 @@ Ext.define('OPS.controller.SelectionMenu', {
 														Ext.Msg.alert('ERROR',responseJSON.data);
 													}
 												},
-												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+												failure: function() {
+													outRecord = fileDownloadStore.findRecord('id',downloadId);
+													outRecord.data.status = 'Error';
+													outRecord.data.ftime = new Date().toLocaleTimeString();
+													outRecord.commit();
+													Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');
+												}
 											});
 										}
 										getCsvGood(selectedSystem,inputJSON,downloadId);
@@ -395,7 +404,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 											tmp = Ext.Ajax.request({
 												method: 'POST',
 												url: '/ops/get/layer/points/csv',
-												timeout: 1200000,
+												timeout: 3600000,
 												params: {'app':selectedSystem,'data':inputJSON},
 												success: function(response){
 													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
@@ -415,7 +424,13 @@ Ext.define('OPS.controller.SelectionMenu', {
 														Ext.Msg.alert('ERROR',responseJSON.data);
 													}
 												},
-												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+												failure: function() {
+													outRecord = fileDownloadStore.findRecord('id',downloadId);
+													outRecord.data.status = 'Error';
+													outRecord.data.ftime = new Date().toLocaleTimeString();
+													outRecord.commit();
+													Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');
+												}
 											});
 										}
 										getCsv(selectedSystem,inputJSON,downloadId);
@@ -427,7 +442,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 											tmp = Ext.Ajax.request({
 												method: 'POST',
 												url: '/ops/get/layer/points/kml',
-												timeout: 1200000,
+												timeout: 3600000,
 												params: {'app':selectedSystem,'data':inputJSON},
 												success: function(response){
 													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
@@ -448,7 +463,13 @@ Ext.define('OPS.controller.SelectionMenu', {
 													}
 														
 												},
-												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+												failure: function() {
+													outRecord = fileDownloadStore.findRecord('id',downloadId);
+													outRecord.data.status = 'Error';
+													outRecord.data.ftime = new Date().toLocaleTimeString();
+													outRecord.commit();
+													Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');
+												}
 											});
 										}
 										getKml(selectedSystem,inputJSON,downloadId);
@@ -460,7 +481,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 											tmp = Ext.Ajax.request({
 												method: 'POST',
 												url: '/ops/get/layer/points/mat',
-												timeout: 1200000,
+												timeout: 3600000,
 												params: {'app':selectedSystem,'data':inputJSON},
 												success: function(response){
 													fileDownloadStore = Ext.data.StoreManager.lookup('FileDownloads');
@@ -481,7 +502,13 @@ Ext.define('OPS.controller.SelectionMenu', {
 													}
 														
 												},
-												failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
+												failure: function() {
+													outRecord = fileDownloadStore.findRecord('id',downloadId);
+													outRecord.data.status = 'Error';
+													outRecord.data.ftime = new Date().toLocaleTimeString();
+													outRecord.commit();
+													Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');
+												}
 											});
 										}
 										getMat(selectedSystem,inputJSON,downloadId);

@@ -37,12 +37,10 @@ Ext.define('OPS.controller.LoginMenu', {
 				}else {
 					Ext.Msg.alert('ERROR',responseJSON.data);
 				}
+				
 			},
 			failure: function() {Ext.Msg.alert('ERROR','UNKOWN ERROR OCCURED.');}
 		});
-		
-		var systemStore = Ext.getStore('Systems');
-		systemStore.load();
 		
 		this.control({
 			'#userLogin': {
