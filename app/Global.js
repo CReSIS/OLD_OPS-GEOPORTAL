@@ -5,6 +5,6 @@ Ext.define("OPS.Global", {
 	 singleton: true,   
 	 
 	 // APPLICATION GLOBALS
-	 baseUrl: "http://192.168.111.222"
+	 baseUrl: ""
 	 
 });
