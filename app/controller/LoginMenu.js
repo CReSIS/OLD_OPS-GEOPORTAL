@@ -23,7 +23,7 @@ Ext.define('OPS.controller.LoginMenu', {
 			method: 'POST',
 			url: '/ops/login/user',
 			timeout: 1200000,
-			params: {'app':'nullsys','data':inputJSON},
+			params: {'app':'rds','data':inputJSON},
 			success: function(response){
 				responseJSON = JSON.parse(response.responseText)
 				if (responseJSON.status == 1) {
@@ -60,7 +60,7 @@ Ext.define('OPS.controller.LoginMenu', {
 						method: 'POST',
 						url: '/ops/login/user',
 						timeout: 1200000,
-						params: {'app':'nullsys','data':inputJSON},
+						params: {'app':'rds','data':inputJSON},
 						success: function(response){
 							responseJSON = JSON.parse(response.responseText)
 							if (responseJSON.status == 1) {
