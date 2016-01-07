@@ -6,9 +6,15 @@
  */
 Ext.Loader.addClassPathMappings({
   "Ext": "ext/src",
+  "Ext.DomHelper": "ext/src/dom/Helper.js",
+  "Ext.DomQuery": "ext/src/dom/Query.js",
+  "Ext.EventObjectImpl": "ext/src/EventObject.js",
   "Ext.Msg": "ext/src/window/MessageBox.js",
+  "Ext.Supports": "ext/src/Support.js",
+  "Ext.core.DomHelper": "ext/src/dom/Helper.js",
+  "Ext.core.DomQuery": "ext/src/dom/Query.js",
   "Ext.rtl.EventObjectImpl": "ext/src/rtl/EventObject.js",
-  "GeoExt": "geoext/src/GeoExt",
+  "GeoExt.window.Popup": "geoext/src/GeoExt/window/Popup.js",
   "OPS": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({

@@ -2,21 +2,24 @@ Ext.define('OPS.controller.MapTabs', {
     
 	extend: 'Ext.app.Controller',
 
-    views: [
-        'MapTabs.MapTabs'
-    ],
-	
+    views: ['MapTabs.MapTabs'],
+
+	models: ['EpsgWktProj','DownloadType','System'],
+    stores: ['EpsgWktProjs','DownloadTypes','Systems'],
+
 	init: function() {
 		
 		this.control({
 			'#maptabs':{
 				tabchange: function(tabPanel,newCard,oldCard) {
-					
+
+                    var selectedSystem = Ext.ComponentQuery.query('#selectedSystem')[0].value;
+
 					var newTab = newCard.tab.text;
 					var oldTab = oldCard.tab.text;
 					
 					var menusPanel = Ext.ComponentQuery.query('menus')[0];
-						menusPanel.expand();
+					menusPanel.expand();
 					
 					if ((newTab == "Arctic" && oldTab == "Antarctic") || (newTab == "Antarctic" && oldTab == "Arctic")) {
 					
@@ -40,8 +43,33 @@ Ext.define('OPS.controller.MapTabs', {
 						
 						var wktProjCombo = Ext.ComponentQuery.query('#wktProj')[0];
 						wktProjCombo.clearValue();
-						
-					
+
+					}
+
+                    var systemStore = Ext.getStore('Systems');
+
+			        if(systemStore.getCount() == 0) { systemStore.load(); }
+
+				    systemStore.clearFilter()
+				    var distinctSystems = systemStore.collect('system');
+				    var outSystems = [];
+				    for (var i=0;i<distinctSystems.length;i++){
+				        outSystems.push([distinctSystems[i]]);
+				    }
+
+				    var systemCombo = Ext.ComponentQuery.query('#selectedSystem')[0]
+
+				    distinctSystemsStore = new Ext.data.ArrayStore({
+				        fields: ['system'],
+				        data: outSystems
+				    });
+
+				    systemCombo.bindStore(distinctSystemsStore);
+
+                    if (!selectedSystem){
+						systemCombo.setValue('rds');
+					} else {
+					    systemCombo.setValue(selectedSystem);
 					}
 				}
 			}

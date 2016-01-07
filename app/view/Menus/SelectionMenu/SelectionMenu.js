@@ -43,7 +43,7 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu' ,{
 				displayField: 'system',
 				valueField: 'system'
 			},{
-					xtype: 'datefield',
+				    xtype: 'datefield',
 					fieldLabel: 'Start Date',
 					itemId: 'startDate',
 					format: 'Ymd',

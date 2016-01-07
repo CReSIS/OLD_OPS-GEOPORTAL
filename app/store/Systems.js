@@ -8,8 +8,11 @@ Ext.define('OPS.store.Systems', {
 		type: 'ajax',
 		url: '/ops/get/system/info',
 		extraParams : {
-			app : 'noapp',
-			data : JSON.stringify({"nodata":"nodata"})
+			app : 'rds',
+			data : JSON.stringify({"properties":{
+			    'username':'anonymous',
+			    'isAuthenticated':true,
+			    'mat':true}})
 		},
 		reader: {
 			type: 'json',

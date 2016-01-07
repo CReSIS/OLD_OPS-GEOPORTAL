@@ -8,7 +8,7 @@ Ext.define('OPS.controller.SelectionMenu', {
     stores: ['EpsgWktProjs','DownloadTypes','Systems'],
 	
 	init: function() {
-		
+
 		this.control({
 		
 			'#applyFilters':{
@@ -103,7 +103,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 					});
 					
 					systemCombo.bindStore(distinctSystemsStore);
-					
+
 				},
 				change: function() {
 					
