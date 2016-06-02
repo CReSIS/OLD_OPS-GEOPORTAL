@@ -57,7 +57,7 @@ Ext.define('OPS.controller.MapTabs', {
 				        outSystems.push([distinctSystems[i]]);
 				    }
 
-				    var systemCombo = Ext.ComponentQuery.query('#selectedSystem')[0]
+				    var systemCombo = Ext.ComponentQuery.query('#selectedSystem')[0];
 
 				    distinctSystemsStore = new Ext.data.ArrayStore({
 				        fields: ['system'],
@@ -66,8 +66,9 @@ Ext.define('OPS.controller.MapTabs', {
 
 				    systemCombo.bindStore(distinctSystemsStore);
 
-                    if (!selectedSystem){
+                    if (selectedSystem == null){
 						systemCombo.setValue('rds');
+						seasonCombo = Ext.ComponentQuery.query('#selectedSeasons')[0];
 					} else {
 					    systemCombo.setValue(selectedSystem);
 					}

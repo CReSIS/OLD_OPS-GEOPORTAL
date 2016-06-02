@@ -6,12 +6,13 @@ var arcticMapPanel = Ext.create('GeoExt.panel.Map', {
 	map: {
 		allOverlays: false,
 		projection: 'EPSG:3413',
-		units: 'm',
+		displayProjection: new OpenLayers.Projection("EPSG:4326"),
+		units: 'dd',
 		maxExtent: new OpenLayers.Bounds(-8125549,-6101879,8186727,3197247),
 		controls: [
 			new OpenLayers.Control.Navigation({dragPanOptions: {enableKinetic: true}}),
 			new OpenLayers.Control.Zoom(),
-			new OpenLayers.Control.MousePosition({prefix: '<a target="_blank" ' +'href="http://spatialreference.org/ref/epsg/3413/">' +'EPSG:3413</a>: '}),
+			new OpenLayers.Control.MousePosition({prefix:'<a target="_blank" href="http://spatialreference.org/ref/epsg/wgs-84/">WGS:84</a>: ', separator: ' E; ', suffix: ' N'}),
 			new OpenLayers.Control.ScaleLine()
 		]
 	},

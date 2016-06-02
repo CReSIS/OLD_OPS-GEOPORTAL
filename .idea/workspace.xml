@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="265da661-5b72-4bb2-99ff-9d27ebf17d00" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/OPS-all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn-group/btn-group-default-framed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn-group/btn-group-default-framed-notitle-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn-group/btn-group-default-framed-notitle-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn-group/btn-group-default-framed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-disabled-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-disabled-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-focus-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-focus-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-focus-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-focus-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-pressed-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-pressed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-pressed-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-pressed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-large-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-disabled-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-disabled-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-focus-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-focus-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-focus-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-focus-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-pressed-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-pressed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-pressed-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-pressed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-medium-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-disabled-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-disabled-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-focus-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-focus-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-focus-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-focus-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-pressed-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-pressed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-pressed-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-pressed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-small-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-focus-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-focus-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-focus-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-focus-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-pressed-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-pressed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-pressed-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-large-pressed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-focus-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-focus-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-focus-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-focus-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-pressed-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-pressed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-pressed-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-medium-pressed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-focus-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-focus-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-focus-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-focus-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-pressed-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-pressed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-pressed-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/btn/btn-default-toolbar-small-pressed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/datepicker/datepicker-footer-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/datepicker/datepicker-header-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/grid/column-header-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/grid/column-header-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/menu/menu-item-active-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-bottom-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-bottom-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-bottom-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-bottom-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-bottom-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-bg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-fbg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-sides-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-left-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-bg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-fbg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-sides-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-right-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-top-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-top-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-top-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-collapsed-top-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-bg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-fbg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-sides-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-left-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-bg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-fbg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-sides-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-right-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-top-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-top-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-top-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-framed-top-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-left-bg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-left-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-right-bg-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-right-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel-header/panel-header-default-top-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel/panel-default-framed-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/panel/panel-default-framed-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/progress/progress-default-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab-bar/tab-bar-default-bottom-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab-bar/tab-bar-default-left-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab-bar/tab-bar-default-right-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab-bar/tab-bar-default-top-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-active-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-active-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-active-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-active-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-disabled-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-disabled-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-bottom-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-active-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-active-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-active-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-active-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-disabled-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-disabled-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-disabled-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-disabled-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-over-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-over-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-over-fbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-over-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tab/tab-default-top-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tip/tip-default-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tip/tip-default-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tip/tip-form-invalid-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/tip/tip-form-invalid-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/toolbar/toolbar-default-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-bottom-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-bottom-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-bottom-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-bottom-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-left-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-left-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-left-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-right-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-right-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-right-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-top-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-collapsed-top-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-left-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-left-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-left-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-right-corners-rtl.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-right-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-right-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-top-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window-header/window-header-default-top-sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window/window-default-corners.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/production/OPS/resources/images/window/window-default-sides.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MapTabs.js" afterPath="$PROJECT_DIR$/app/controller/MapTabs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapTabs/AntarcticTab/AntarcticTab.js" afterPath="$PROJECT_DIR$/app/view/MapTabs/AntarcticTab/AntarcticTab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js" afterPath="$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.json" afterPath="$PROJECT_DIR$/bootstrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/OPS/app.js" afterPath="$PROJECT_DIR$/build/production/OPS/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/production/OPS/resources/about.html" afterPath="$PROJECT_DIR$/build/production/OPS/resources/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/OPS/sass/OPS-all.scss" afterPath="$PROJECT_DIR$/build/temp/production/OPS/sass/OPS-all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/OPS/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/build/temp/production/OPS/sencha-compiler/app/full-page-master-bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opsBuildPortal.log" afterPath="$PROJECT_DIR$/opsBuildPortal.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/about.html" afterPath="$PROJECT_DIR$/resources/about.html" />
+    </list>
+    <ignored path="OPS-GEOPORTAL.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="OPS-GEOPORTAL" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MapTabs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/MapTabs/MapTabs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Systems.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectionMenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/SelectionMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="74" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapTabs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArcticTab.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="100" selection-start-line="26" selection-start-column="100" selection-end-line="26" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AntarcticTab.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/MapTabs/AntarcticTab/AntarcticTab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.02818991">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/store/Systems.js" />
+        <option value="$PROJECT_DIR$/app/controller/MapTabs.js" />
+        <option value="$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js" />
+        <option value="$PROJECT_DIR$/app/view/MapTabs/AntarcticTab/AntarcticTab.js" />
+        <option value="$PROJECT_DIR$/resources/about.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapTabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapTabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArcticTab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapTabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AntarcticTab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPS-GEOPORTAL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\j610c377\Desktop\Git\MyOPS\OPS-GEOPORTAL\app\view\MapTabs\AntarcticTab" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.opsBuildPortal">
+    <configuration default="false" name="opsBuildPortal" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPS-GEOPORTAL" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opsBuildPortal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPS-GEOPORTAL" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPS-GEOPORTAL" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPS-GEOPORTAL" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPS-GEOPORTAL" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPS-GEOPORTAL" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPS-GEOPORTAL" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.opsBuildPortal" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.opsBuildPortal" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="265da661-5b72-4bb2-99ff-9d27ebf17d00" name="Default" comment="" />
+      <created>1456447479536</created>
+      <option name="number" value="Default" />
+      <updated>1456447479536</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25871173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/SelectionMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="263" column="66" selection-start-line="263" selection-start-column="66" selection-end-line="263" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="373" column="21" selection-start-line="373" selection-start-column="21" selection-end-line="373" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/SelectionMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="263" column="66" selection-start-line="263" selection-start-column="66" selection-end-line="263" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="373" column="21" selection-start-line="373" selection-start-column="21" selection-end-line="373" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/SelectionMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/SelectionMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/SelectionMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opsBuildPortal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opsBuildPortal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/System.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opsBuildPortal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/FileDownloads.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Menus/Menus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18554688">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Menus/SelectionMenu/SelectionMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sencha/app/build-impl.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35123968">
+          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/System.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/FileDownload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/DownloadType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/EpsgWktProj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Systems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/SelectionMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="74" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/ArcticTab/ArcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="100" selection-start-line="26" selection-start-column="100" selection-end-line="26" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapTabs/AntarcticTab/AntarcticTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02818991">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

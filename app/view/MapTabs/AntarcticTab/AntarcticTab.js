@@ -6,12 +6,13 @@ var antarcticMapPanel = Ext.create('GeoExt.panel.Map', {
 	map: {
 		allOverlays: false,
 		projection: 'EPSG:3031',
-		units: 'm',
+		displayProjection: new OpenLayers.Projection("EPSG:4326"),
+		units: 'dd',
 		maxExtent: new OpenLayers.Bounds(-8221026,-4585257,8091116,4715069),
 		controls: [
 			new OpenLayers.Control.Navigation({dragPanOptions: {enableKinetic: true}}),
 			new OpenLayers.Control.Zoom(),
-			new OpenLayers.Control.MousePosition({prefix: '<a target="_blank" ' +'href="http://spatialreference.org/ref/epsg/3031/">' +'EPSG:3031</a>: '}),
+			new OpenLayers.Control.MousePosition({prefix:'<a target="_blank" href="http://spatialreference.org/ref/epsg/wgs-84/">WGS:84</a>: ', separator: ' E; ', suffix: ' N'}),
 			new OpenLayers.Control.ScaleLine()	
 		]
 	},
