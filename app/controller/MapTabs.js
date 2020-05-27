@@ -66,7 +66,7 @@ Ext.define('OPS.controller.MapTabs', {
 
 				    systemCombo.bindStore(distinctSystemsStore);
 
-                    if (selectedSystem == null){
+                    if (selectedSystem == null || selectedSystem.isWhitespace()){
 						systemCombo.setValue('rds');
 						seasonCombo = Ext.ComponentQuery.query('#selectedSeasons')[0];
 					} else {
