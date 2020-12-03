@@ -1,4 +1,4 @@
-'''
+r'''
 CReSIS OpenPolarServer ExtJS Custom Build Script
 
 About:
