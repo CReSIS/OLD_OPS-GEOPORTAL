@@ -52302,6 +52302,7 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu', {extend:Ext.Panel, alia
   this.callParent(arguments);
 }});
 Ext.define('OPS.controller.SelectionMenu', {extend:Ext.app.Controller, views:['Menus.SelectionMenu.SelectionMenu'], models:['EpsgWktProj', 'DownloadType', 'System'], stores:['EpsgWktProjs', 'DownloadTypes', 'Systems'], init:function() {
+  var curLocation;
   this.control({'#applyFilters':{click:function() {
     var curTab = Ext.ComponentQuery.query('maptabs')[0].getActiveTab().title;
     if (curTab === 'Arctic') {

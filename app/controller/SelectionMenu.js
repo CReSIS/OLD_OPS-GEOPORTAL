@@ -9,6 +9,7 @@ Ext.define('OPS.controller.SelectionMenu', {
 	
 	init: function() {
 
+        var curLocation;
 		this.control({
 		
 			'#applyFilters':{
