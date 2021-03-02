@@ -52302,7 +52302,6 @@ Ext.define('OPS.view.Menus.SelectionMenu.SelectionMenu', {extend:Ext.Panel, alia
   this.callParent(arguments);
 }});
 Ext.define('OPS.controller.SelectionMenu', {extend:Ext.app.Controller, views:['Menus.SelectionMenu.SelectionMenu'], models:['EpsgWktProj', 'DownloadType', 'System'], stores:['EpsgWktProjs', 'DownloadTypes', 'Systems'], init:function() {
-  var curLocation;
   this.control({'#applyFilters':{click:function() {
     var curTab = Ext.ComponentQuery.query('maptabs')[0].getActiveTab().title;
     if (curTab === 'Arctic') {
@@ -52366,8 +52365,6 @@ Ext.define('OPS.controller.SelectionMenu', {extend:Ext.app.Controller, views:['M
       updateLayer.redraw(true);
     }
   }}, '#selectedSystem':{focus:function() {
-    var curTab = Ext.ComponentQuery.query('maptabs')[0].getActiveTab().title;
-    curLocation = curTab.toLowerCase();
     var systemStore = Ext.getStore('Systems');
     if (systemStore.getCount() == 0) {
       systemStore.load();
@@ -52382,6 +52379,8 @@ Ext.define('OPS.controller.SelectionMenu', {extend:Ext.app.Controller, views:['M
     distinctSystemsStore = new Ext.data.ArrayStore({fields:['system'], data:outSystems});
     systemCombo.bindStore(distinctSystemsStore);
   }, change:function() {
+    var curTab = Ext.ComponentQuery.query('maptabs')[0].getActiveTab().title;
+    var curLocation = curTab.toLowerCase();
     var curSystem = Ext.ComponentQuery.query('#selectedSystem')[0].value;
     var systemStore = Ext.getStore('Systems');
     systemStore.clearFilter();
