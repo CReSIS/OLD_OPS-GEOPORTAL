@@ -9,7 +9,6 @@ Ext.define('OPS.controller.SelectionMenu', {
 	
 	init: function() {
 
-        var curLocation;
 		this.control({
 		
 			'#applyFilters':{
@@ -82,9 +81,6 @@ Ext.define('OPS.controller.SelectionMenu', {
 			'#selectedSystem':{
 				focus: function() {
 					
-					var curTab = Ext.ComponentQuery.query('maptabs')[0].getActiveTab().title;
-					curLocation = curTab.toLowerCase();
-					
 					var systemStore = Ext.getStore('Systems');
 					
 					if(systemStore.getCount() == 0) { systemStore.load(); }
@@ -107,7 +103,8 @@ Ext.define('OPS.controller.SelectionMenu', {
 
 				},
 				change: function() {
-					
+					var curTab = Ext.ComponentQuery.query('maptabs')[0].getActiveTab().title;
+					var curLocation = curTab.toLowerCase();
 					var curSystem = Ext.ComponentQuery.query('#selectedSystem')[0].value
 					
 					var systemStore = Ext.getStore('Systems');
